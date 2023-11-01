@@ -1,12 +1,12 @@
-import React from 'react'
-import Home from './Pages/Home'
+import React from "react";
+import Routing from "./Components/Routing";
 
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Routing />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
