@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navigation from "../../Components/Navigation";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <div>
+      <Navigation />
+    </div>
+  );
+};
 
-export default Services
+export default Services;

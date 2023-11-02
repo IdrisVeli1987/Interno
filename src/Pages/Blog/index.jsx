@@ -1,8 +1,11 @@
 import React from 'react'
+import Navigation from '../../Components/Navigation'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <Navigation/>
+    </div>
   )
 }
 
