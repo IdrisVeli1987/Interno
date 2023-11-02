@@ -13,7 +13,7 @@ const Banner = () => {
               There are many variations of the passages of lorem Ipsum
               fromavailable,variations of the passages.
             </p>
-            <Button title="Send Now" arrow bg='dark' />
+            <Button title="Send Now" arrow bg='gold' />
           </div>
         </div>
       </div>
