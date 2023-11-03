@@ -1,5 +1,16 @@
-.title {
+.WorkPlanCard {
   text-align: center;
+  margin: 0 auto;
 }
 
+.readMoreBtn {
+  display: inline-block;
+  margin: 10px 0;
+  color: #000;
+  font-weight: 400;
+}
 
+.readMoreBtn span {
+  color: #cda274;
+  vertical-align: middle;
+}
