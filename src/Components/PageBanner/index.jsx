@@ -1,9 +1,15 @@
 import React from "react";
+import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
-const PageBanner = () => {
+const PageBanner = ({src, page}) => {
   return (
-    <div>
-      <img src="/PageBanner/Logo.png" alt="" />
+    <div className={styles.bannerContainer}>
+      <img src={src} alt="" className={styles.bannerLogo} />
+      <div className={styles.bannerInfo}>
+        <h2>Services</h2>
+        <p><Link to="/">Home</Link> / {page}</p>
+      </div>
     </div>
   );
 };
