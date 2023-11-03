@@ -3,6 +3,8 @@ import Navigation from "../../Components/Navigation";
 import { useParams } from "react-router";
 import axios from "axios";
 import PageBanner from "../../Components/PageBanner";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const URL = "http://localhost:3000/WorkPlan/";
 const WorkPlanCardsDetail = () => {
@@ -17,12 +19,15 @@ const WorkPlanCardsDetail = () => {
   }, []);
 
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+      <Helmet>
+        <title>Work Plan</title>
+      </Helmet>
       <Navigation />
-      <PageBanner/>
+      <PageBanner src="/PageBanner/Logo.png" page="Work Plan Single" />
       <h2>{plan.title}</h2>
       <p>{plan.description}</p>
-    </div>
+    </motion.div>
   );
 };
 
