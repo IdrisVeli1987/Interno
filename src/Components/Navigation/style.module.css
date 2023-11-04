@@ -42,3 +42,37 @@ header {
   object-fit: cover;
   width: 100%;
 }
+
+.bars {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    top: 60px;
+    background-color: #fff;
+    border: 1px solid #cda274;
+    padding-top: 30px;
+    gap: 20px;
+
+    .navLink::after,
+    .navLink:hover:after {
+      width: 0;
+    }
+
+    .navLink {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none !important;
+  }
+}
