@@ -4,6 +4,7 @@ import Banner from "../../Components/Banner";
 import WorkPlanCards from "../../Components/WorkPlanCards";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import Stylishly from "../../Components/Stylishly";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Navigation />
       <Banner />
       <WorkPlanCards />
+      <Stylishly />
     </motion.div>
   );
 };
