@@ -8,10 +8,9 @@ const Navigation = () => {
     <header>
       <div className="container">
         <div className={styles.navbar}>
-          <div className="logo">
-            <Link to="/">
-              <img src="../Logo.svg" alt="Logo" />
-            </Link>
+          <div className={styles.logo}>
+            <img src="../Logo.svg" alt="Logo" />
+            <Link to="/"></Link>
           </div>
           <nav>
             {myRoutes.map(({ id, path, title }) => {

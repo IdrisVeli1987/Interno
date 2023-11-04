@@ -5,6 +5,7 @@ header {
 
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 60px;
@@ -34,5 +35,10 @@ header {
 }
 
 .navbar .active::after {
+  width: 100%;
+}
+
+.logo img {
+  object-fit: cover;
   width: 100%;
 }
