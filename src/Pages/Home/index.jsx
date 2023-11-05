@@ -5,6 +5,7 @@ import WorkPlanCards from "../../Components/WorkPlanCards";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Stylishly from "../../Components/Stylishly";
+import PeopleCards from "../../Components/PeopleCards";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Banner />
       <WorkPlanCards />
       <Stylishly />
+      <PeopleCards />
     </motion.div>
   );
 };

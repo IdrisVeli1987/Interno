@@ -11,8 +11,9 @@ const Navigation = () => {
       <div className="container">
         <div className={styles.navbar}>
           <div className={styles.logo}>
-            <img src="../Logo.svg" alt="Logo" />
-            <Link to="/"></Link>
+            <Link to="/">
+              <img src="../Logo.svg" alt="Logo" />
+            </Link>
           </div>
           <nav className={`${styles.navMenu} d-none d-md-block`}>
             {myRoutes.map(({ id, path, title }) => {
