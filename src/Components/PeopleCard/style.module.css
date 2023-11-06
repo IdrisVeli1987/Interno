@@ -1,0 +1,48 @@
+.PeopleCard {
+  background-color: #fff;
+  margin: 0 10px;
+  width: 90%;
+  padding: 40px 35px;
+  border-radius: 25px;
+}
+
+.PeopleCard_top {
+  gap: 23px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+}
+
+.userCity {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.18px;
+}
+
+.useDesc {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.image {
+  border-radius: 50%;
+}

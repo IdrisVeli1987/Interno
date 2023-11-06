@@ -11,58 +11,9 @@
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; 
+  line-height: 125%;
   letter-spacing: 1px;
 }
 
-.PeopleCard {
-  background-color: #fff;
-  margin-right: 20px;
-  width: 100%;
-  padding: 50px 35px;
-  border-radius: 25px;
-}
-
-.PeopleCard_top{
-  gap: 23px;
-  padding-bottom: 25px;
-}
-
-img {
-  border-radius: 50%;
-}
-
 .usersCards {
-  display: flex;
-  justify-content: center;
-}
-
-.userName {
-  color: #292f36;
-  font-family: DM Serif Display;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; 
-  letter-spacing: 0.25px;
-}
-
-.userCity {
-  color: #4d5053;
-  font-family: Jost;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.18px;
-}
-
-.useDesc {
-  color: #4d5053;
-  font-family: Jost;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; 
-  letter-spacing: 0.22px;
 }

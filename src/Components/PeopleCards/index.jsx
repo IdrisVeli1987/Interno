@@ -1,12 +1,28 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
+import PeopleCard from "../PeopleCard";
+import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
 
 const _url = "http://localhost:3000/users";
 
 const PeopleCards = () => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 576 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 576, min: 0 },
+      items: 1,
+    },
+  };
   const [users, setUsers] = useState([]);
-
   useEffect(() => {
     axios.get(_url).then(({ data }) => {
       setUsers(data);
@@ -18,25 +34,21 @@ const PeopleCards = () => {
       <div className="row">
         <div className={`${styles.aboutUs} `}>
           <h3 className={`${styles.title} mb-5  `}>
-            What the People Thinks About Us
+            What the People Thinks <br /> About Us
           </h3>
+
           <div className={styles.usersCards}>
-            {users.map(({ id, src, name, city, description }) => {
-              return (
-                <div key={id} className={`${styles.PeopleCard}`}>
-                  <div
-                    className={`${styles.PeopleCard_top} d-flex align-items-center`}
-                  >
-                    <img className={styles.image} src={src} alt={name} />
-                    <div className={`${styles.PeopleCard_topText}`}>
-                      <h5 className={styles.userName}>{name}</h5>
-                      <p className={styles.userCity}>{city}</p>
-                    </div>
-                  </div>
-                  <p className={styles.useDesc}>{description}</p>
-                </div>
-              );
-            })}
+            <Carousel
+              responsive={responsive}
+              arrows={false}
+              infinite={true}
+              autoPlay={true}
+              className={styles.carousel}
+            >
+              {users.map((user) => {
+                return <PeopleCard key={user.id} {...user} />;
+              })}
+            </Carousel>
           </div>
         </div>
       </div>
