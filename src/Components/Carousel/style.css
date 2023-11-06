@@ -1,0 +1,11 @@
+.react-multi-carousel-track {
+  align-items: center;
+}
+
+.carouselImageBox {
+  text-align: center;
+}
+
+.carouselImage {
+  border-radius: 0;
+}
