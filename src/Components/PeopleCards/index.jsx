@@ -1,83 +1,42 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 
+const _url = "http://localhost:3000/users";
+
 const PeopleCards = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get(_url).then(({ data }) => {
+      setUsers(data);
+    });
+  }, []);
+
   return (
-    <div>
-      <div className="container">
-        <div className="row">
-          <div className={styles.aboutUs}>
-            <h2 className={styles.peopleCardsTitle}>
-              What the People Thinks About Us
-            </h2>
-
-            <div className={`row g-2 gy-2 gx-2 ${styles.people_cards}`}>
-              <div className={`col-12 col-xl-4`}>
-                <div className={`p-4 ${styles.person_card}`}>
-                  <div className={styles.cardsBlock}>
-                    <img
-                      src="../AboutUs/person1.svg"
-                      alt=""
-                      className={styles.personImage}
-                    />
-                    <div className={styles.peopleName}>
-                      <h4 className={styles.personName}>Nattasha Mith</h4>
-                      <p className={styles.nameDesc}>Sydney, USA</p>
+    <div className="container">
+      <div className="row">
+        <div className={`${styles.aboutUs} `}>
+          <h3 className={`${styles.title} mb-5  `}>
+            What the People Thinks About Us
+          </h3>
+          <div className={styles.usersCards}>
+            {users.map(({ id, src, name, city, description }) => {
+              return (
+                <div key={id} className={`${styles.PeopleCard}`}>
+                  <div
+                    className={`${styles.PeopleCard_top} d-flex align-items-center`}
+                  >
+                    <img className={styles.image} src={src} alt={name} />
+                    <div className={`${styles.PeopleCard_topText}`}>
+                      <h5 className={styles.userName}>{name}</h5>
+                      <p className={styles.userCity}>{city}</p>
                     </div>
                   </div>
-                  <div className={styles.peopleDescriptions}>
-                    <p className={styles.pepoleDescription}>
-                      Lorem Ipsum is simply dummy text of the typesetting
-                      industry. Ipsum has been.
-                    </p>
-                  </div>
+                  <p className={styles.useDesc}>{description}</p>
                 </div>
-              </div>
-
-              <div className={`col-12 col-xl-4`}>
-                <div className={`p-4 ${styles.person_card}`}>
-                  <div className={` ${styles.cardsBlock}`}>
-                    <img
-                      className={styles.personImage}
-                      src="../AboutUs/person2.svg"
-                      alt=""
-                    />
-                    <div className={styles.peopleName}>
-                      <h4 className={styles.personName}>Raymond Galario</h4>
-                      <p className={styles.nameDesc}>Sydney, Australia</p>
-                    </div>
-                  </div>
-                  <div className={styles.peopleDescriptions}>
-                    <p className={styles.pepoleDescription}>
-                      Lorem Ipsum is simply dummy text of the typesetting
-                      industry. Ipsum has been scrambled it to make a type book.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className={`col-12 col-xl-4`}>
-                <div className={`p-4 ${styles.person_card}`}>
-                  <div className={styles.cardsBlock}>
-                    <img
-                      src="../AboutUs/person3.svg"
-                      alt=""
-                      className={styles.personImage}
-                    />
-                    <div className={styles.peopleName}>
-                      <h4 className={styles.personName}>Benny Roll</h4>
-                      <p className={styles.nameDesc}>Sydney, New York</p>
-                    </div>
-                  </div>
-                      <div className={styles.peopleDescriptions}>
-                        <p className={styles.pepoleDescription}>
-                          Lorem Ipsum is simply dummy text of the typesetting
-                          industry. Ipsum has been scrambled.
-                        </p>
-                      </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
