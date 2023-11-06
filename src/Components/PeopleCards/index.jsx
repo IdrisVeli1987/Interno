@@ -33,8 +33,9 @@ const PeopleCards = () => {
                   </div>
                 </div>
               </div>
+
               <div className={`col-12 col-xl-4`}>
-                <div className={`py-2 ${styles.person_card}`}>
+                <div className={`p-4 ${styles.person_card}`}>
                   <div className={` ${styles.cardsBlock}`}>
                     <img
                       className={styles.personImage}
@@ -54,8 +55,27 @@ const PeopleCards = () => {
                   </div>
                 </div>
               </div>
+
               <div className={`col-12 col-xl-4`}>
-                <div className={`p-5 ${styles.person_card}`}></div>
+                <div className={`p-4 ${styles.person_card}`}>
+                  <div className={styles.cardsBlock}>
+                    <img
+                      src="../AboutUs/person3.svg"
+                      alt=""
+                      className={styles.personImage}
+                    />
+                    <div className={styles.peopleName}>
+                      <h4 className={styles.personName}>Benny Roll</h4>
+                      <p className={styles.nameDesc}>Sydney, New York</p>
+                    </div>
+                  </div>
+                      <div className={styles.peopleDescriptions}>
+                        <p className={styles.pepoleDescription}>
+                          Lorem Ipsum is simply dummy text of the typesetting
+                          industry. Ipsum has been scrambled.
+                        </p>
+                      </div>
+                </div>
               </div>
             </div>
           </div>

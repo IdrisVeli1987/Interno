@@ -2,6 +2,7 @@
   background-color: #f4f0ec;
   border-radius: 35px;
   padding: 90px 25px;
+  margin-top: 150px !important;
 }
 
 .peopleCardsTitle {
@@ -35,6 +36,7 @@
   border-radius: 25px;
   margin: 0 10px;
   gap: 25px;
+  height: 330px;
 }
 
 .personImage {
@@ -49,6 +51,7 @@
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
+  padding-top: 25px;
 }
 
 .personName {
