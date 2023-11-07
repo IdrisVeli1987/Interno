@@ -7,22 +7,16 @@
   font-weight: 400;
   line-height: 125%; /* 62.5px */
   letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .projectsDesc {
-  width: 737px;
   text-align: center;
   color: #4d5053;
-  text-align: center;
   font-family: Jost;
   font-size: 22px;
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
 }
-.card {
-}
-/* .card__image{
-    width: 100px;
-    height: auto;
-} */
+

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
+import OurProject from "../OurProject";
 
 const URL = "http://localhost:3000/OurProjects";
 
@@ -16,19 +17,19 @@ const OurProjects = () => {
     <div className="container">
       <div className="row">
         <div className={styles.ourProjectsBox}>
-          <h2 className={`${styles.projectsTitle}`}>Follow Our Projects</h2>
-          <p className={`${styles.projectsDesc}`}>
+          <h2 className={`${styles.projectsTitle} mb-2`}>Follow Our Projects</h2>
+          <p className={`${styles.projectsDesc} mb-5`}>
             It is a long established fact that a reader will be distracted by
-            the of readable content of page lookings at its layouts points.
+            the of readable <br /> content of page lookings at its layouts
+            points.
           </p>
         </div>
       </div>
       <div className="d-flex flex-wrap">
-        {projects?.map((project) => {
-
-          return <OurProject  key={OurProjects.id} {...OurProjects}/>
-        }
-        )}
+        {projects.length &&
+          projects.map((proj) => {
+            return <OurProject key={proj.id} {...proj} />;
+          })}
       </div>
     </div>
   );

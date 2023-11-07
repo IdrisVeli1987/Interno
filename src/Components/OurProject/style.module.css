@@ -1,0 +1,31 @@
+.ourProjectsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsImg {
+  width: 686px;
+  height: 1031px;
+  flex-shrink: 0;
+}
+
+.projectsTitle {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 31.25px */
+  letter-spacing: 0.5px;
+}
+
+/* .projectsDesc {
+  display: flex;
+} */
+
+.projectsImg {
+  width: 686px;
+  height: 1031px;
+  flex-shrink: 0;
+}

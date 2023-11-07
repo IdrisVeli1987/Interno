@@ -4,10 +4,13 @@ import styles from "./style.module.css";
 import PeopleCard from "../PeopleCard";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import { Rating } from "react-simple-star-rating";
 
 const _url = "http://localhost:3000/users";
 
 const PeopleCards = () => {
+ 
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -48,6 +51,7 @@ const PeopleCards = () => {
               {users.map((user) => {
                 return <PeopleCard key={user.id} {...user} />;
               })}
+              
             </Carousel>
           </div>
         </div>
