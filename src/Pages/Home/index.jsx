@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 import Stylishly from "../../Components/Stylishly";
 import PeopleCards from "../../Components/PeopleCards";
 import CarouselComponent from "../../Components/Carousel";
+import OurProjects from "../../Components/OurProjects";
+
 const Home = () => {
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
@@ -19,6 +21,7 @@ const Home = () => {
       <Stylishly />
       <PeopleCards />
       <CarouselComponent />
+      <OurProjects />
     </motion.div>
   );
 };
