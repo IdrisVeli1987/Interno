@@ -1,16 +1,29 @@
 import React from "react";
 import styles from "./style.module.css";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const OurProject = ({ src, title, description }) => {
   return (
-    <div>
-      <div className={`${styles.ourProjectsBox} d-flex`}>
-        <div className={`${styles.projectscards} d-inline-block alignItems-center`}>
-          <div className={`${styles.cardImages} d-flex`}>
-            <img src={src} alt="" className={styles.projectsImg}/>
+    <div className={`${styles.ourProjectsBox} col-12 col-md-5 col-xl-5 d-flex`}>
+      <div className={`${styles.projectsCards}`}>
+        <div className={`${styles.cardImages}`}>
+          <img src={src} alt={title} className={styles.projectsImg} />
+        </div>
+
+        <div
+          className={`${styles.card_bottom} d-flex align-items-center justify-content-between`}
+        >
+          <div className={styles.card_text}>
+            <h5 className={`${styles.projectsTitle}`}>{title}</h5>
+            <p className={`${styles.projectsDesc}`}>{description}</p>
           </div>
-          <h5 className={`${styles.projectsTitle}`}>{title}</h5>
-          <p className={`${styles.projectsDesc}`}>{description}</p>
+
+          <button
+            className={`${styles.card_arrow} d-flex align-items-center justify-content-center`}
+          >
+              <MdOutlineArrowForwardIos />
+          </button>
         </div>
       </div>
     </div>

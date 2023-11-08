@@ -17,15 +17,17 @@ const OurProjects = () => {
     <div className="container">
       <div className="row">
         <div className={styles.ourProjectsBox}>
-          <h2 className={`${styles.projectsTitle} mb-2`}>Follow Our Projects</h2>
-          <p className={`${styles.projectsDesc} mb-5`}>
+          <h2 className={`${styles.projectsTitle} mb-2`}>
+            Follow Our Projects
+          </h2>
+          <p className={`${styles.projectsDesc} mb-5 `}>
             It is a long established fact that a reader will be distracted by
             the of readable <br /> content of page lookings at its layouts
             points.
           </p>
         </div>
       </div>
-      <div className="d-flex flex-wrap">
+      <div className="d-flex justify-content-between flex-wrap alignItems-center bg-primary">
         {projects.length &&
           projects.map((proj) => {
             return <OurProject key={proj.id} {...proj} />;
