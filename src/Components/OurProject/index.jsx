@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./style.module.css";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import styles from "./style.module.css";
 
 const OurProject = ({ src, title, description }) => {
   return (

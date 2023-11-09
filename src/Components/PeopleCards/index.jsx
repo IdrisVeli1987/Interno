@@ -1,10 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import styles from "./style.module.css";
-import PeopleCard from "../PeopleCard";
-import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import { Rating } from "react-simple-star-rating";
+import "react-multi-carousel/lib/styles.css";
+import PeopleCard from "../PeopleCard";
+import styles from "./style.module.css";
 
 const _url = "http://localhost:3000/users";
 

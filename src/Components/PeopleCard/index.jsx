@@ -8,7 +8,6 @@ const PeopleCard = ({ name, src, city, description }) => {
   // Catch Rating value
   const handleRating = (rate) => {
     setRating(rate);
-    // Some logic
   };
   return (
     <div className={`${styles.PeopleCard}`}>
@@ -29,9 +28,8 @@ const PeopleCard = ({ name, src, city, description }) => {
           transition
           fillColor="orange"
           emptyColor="gray"
-          className="foo" // Will remove the inline style if applied
+          className="foo" 
         />
-        {/* Use rating value */}
         {rating}
       </div>
     </div>
