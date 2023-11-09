@@ -5,6 +5,7 @@ import Project from "../../Pages/Project";
 import Blog from "../../Pages/Blog";
 import Contact from "../../Pages/Contact";
 import WorkPlanCardsDetail from "../../Pages/WorkPlanCardsDeatil";
+import ProjectDeatil from "../../Pages/ProjectDetail";
 
 export const myRoutes = [
   {
@@ -46,5 +47,10 @@ export const myRoutes = [
     id: 7,
     path: "*",
     element: <ErrorPage />,
+  },
+  {
+    id: 8,
+    path: "/project/:id",
+    element: <ProjectDeatil />,
   },
 ];

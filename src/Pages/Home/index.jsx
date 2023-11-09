@@ -8,6 +8,7 @@ import Stylishly from "../../Components/Stylishly";
 import PeopleCards from "../../Components/PeopleCards";
 import CarouselComponent from "../../Components/Carousel";
 import OurProjects from "../../Components/OurProjects";
+import StaticNumbers from "../../Components/StaticNumbers";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <PeopleCards />
       <CarouselComponent />
       <OurProjects />
+      <StaticNumbers />
     </motion.div>
   );
 };

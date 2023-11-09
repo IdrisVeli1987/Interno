@@ -1,8 +1,9 @@
 import React from "react";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
-const OurProject = ({ src, title, description }) => {
+const OurProject = ({ id, src, title, description }) => {
   return (
     <div className={`${styles.ourProjectsBox} col-12 col-md-5 col-xl-5 d-flex`}>
       <div className={`${styles.projectsCards}`}>
@@ -18,11 +19,13 @@ const OurProject = ({ src, title, description }) => {
             <p className={`${styles.projectsDesc}`}>{description}</p>
           </div>
 
-          <button
-            className={`${styles.card_arrow} d-flex align-items-center justify-content-center`}
-          >
+          <Link to={`/project/${id}`}>
+            <button
+              className={`${styles.card_arrow} d-flex align-items-center justify-content-center`}
+            >
               <MdOutlineArrowForwardIos />
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
