@@ -23,11 +23,15 @@ const ProjectDeatil = () => {
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <Helmet>
-        <title>Our Project</title>
+        <title></title>
       </Helmet>
 
       <Navigation />
-      <PageBanner src="../ProjectPage/ProjectPage.svg" page="Our Project" />
+      <PageBanner
+        src="../ProjectPage/ProjectPage.svg"
+        page="project"
+        title="Our Project"
+      />
       <h2>{project.title}</h2>
       <p>{project.description}</p>
     </motion.div>

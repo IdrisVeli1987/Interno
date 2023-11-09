@@ -24,7 +24,11 @@ const WorkPlanCardsDetail = () => {
         <title>Work Plan</title>
       </Helmet>
       <Navigation />
-      <PageBanner src="/PageBanner/Logo.png" page="Work Plan Single" />
+      <PageBanner
+        src="/PageBanner/Logo.png"
+        title="Work Plan Single"
+        page="WorkPlanCards"
+      />
       <h2>{plan.title}</h2>
       <p>{plan.description}</p>
     </motion.div>
