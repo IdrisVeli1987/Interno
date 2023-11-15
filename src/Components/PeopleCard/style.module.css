@@ -50,3 +50,9 @@
 .image {
   border-radius: 50%;
 }
+
+@media screen and (max-width:450px) {
+  .useDesc{
+    font-size: 16px;
+  }
+}

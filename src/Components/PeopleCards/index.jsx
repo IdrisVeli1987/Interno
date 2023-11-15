@@ -33,8 +33,8 @@ const PeopleCards = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className={`${styles.aboutUs} `}>
+      <div className="row col-xl col-xs-12">
+        <div className={`${styles.aboutUs} col-12`}>
           <h3 className={`${styles.title} mb-5  `}>
             What the People Thinks <br /> About Us
           </h3>
