@@ -20,7 +20,7 @@ h3 {
 
 p {
   color: #4d5053;
-  text-align: center;
+  /* text-align: center; */
   font-family: Jost;
   font-size: 22px;
   font-style: normal;
@@ -39,18 +39,20 @@ p {
 
 .ArticleBox {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   border-radius: 62px;
   border: 1px solid #e7e7e7;
   padding: 20px;
-  /* box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-    margin: 50px 0; */
 }
 
-.ArticleBox-active {
+.ArticleBox:hover {
   background-color: #f4f0ec;
+}
+
+.ArticleBox:hover .ArticleArrow {
+  background-color: #fff;
 }
 
 .ArticleBoxImg {
@@ -93,12 +95,35 @@ p {
   padding: 10px;
 }
 
+.ImageDesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 70px;
+}
+
 .ImageDesc p {
   color: #4d5053;
   font-family: Jost;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
-  background-color: gray;
-  margin-top: 20px;
 }
+
+.DescDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ArticleArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  padding: 20px;
+  border-color: transparent;
+}
+

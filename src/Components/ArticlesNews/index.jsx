@@ -3,6 +3,8 @@ import styles from "./style.module.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const url = "http://localhost:3000/ArticleNews/";
 
@@ -16,7 +18,7 @@ const ArticlesNews = () => {
   }, []);
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mb-5">
         <div className={styles.ArticleHeader}>
           <h3>Articles & News</h3>
           <p>
@@ -41,7 +43,14 @@ const ArticlesNews = () => {
               </div>
               <h5 className={styles.ImageSubtitle}>{title}</h5>
               <div className={styles.ImageDesc}>
-                <p>{date}</p>
+                <div className={styles.DescDate}>
+                  <p>{date}</p>
+                </div>
+                <Link to={`/Blog/${id}`}>
+                  <button className={styles.ArticleArrow}>
+                    <MdOutlineArrowForwardIos />
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -32,10 +32,11 @@
   flex-direction: column;
 }
 
-.cardImages:hover {
+.cardImages img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
-  transition: width 3s;
-  transition-delay: 1s;  
+  transition: 1s ease;
 }
 
 .projectsImg {
@@ -55,18 +56,13 @@
   letter-spacing: 0.5px;
 }
 
-.projectsImg {
-  width: 100%;
-  flex-shrink: 0;
-}
-
 .card_bottom {
   margin-top: 25px;
 }
 
 .card_bottom:hover {
-  /* box-shadow: rgb(3, 116, 237) 0px 20px 30px -10px; */
-  transform: scale(0.9);
+  box-shadow: inset 100%   0 0 0 #54b3d6;
+  color: white;
 }
 
 .card_arrow {
@@ -79,8 +75,4 @@
   border-color: transparent;
   transition: all 0.5s ease;
   cursor: pointer;
-}
-
-.card_arrow:hover {
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
