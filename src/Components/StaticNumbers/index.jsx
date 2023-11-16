@@ -17,14 +17,12 @@ const StaticNumbers = () => {
     <>
       <div className={`${styles.staticBox} `}>
         <div className="container">
-          <div
-            className={`${styles.statics} d-flex align-items-center justify-content-center py-5 gap-3 mt-5 mb-5`}
-          >
+          <div className={`${styles.statics} row py-5 gap-3 mt-5 mb-5`}>
             {numbers.map(({ id, number, description }) => {
               return (
                 <div
                   key={id}
-                  className={`${styles.staticNumber} ${styles.line}`}
+                  className={`${styles.staticNumber} ${styles.line} col-12 col-sm-6 col-md-3 py-4 `}
                 >
                   <h6 className={`${styles.staticNbr}`}>
                     <CountUp end={number} duration={3} enableScrollSpy />
