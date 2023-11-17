@@ -12,7 +12,7 @@ const Navigation = () => {
         <div className={styles.navbar}>
           <div className={styles.logo}>
             <Link to="/">
-              <img src="../Logo.svg" alt="Logo" />
+              <img src="/Logo/Logo.svg" alt="Logo" />
             </Link>
           </div>
           <nav className={`${styles.navMenu} d-none d-md-block`}>

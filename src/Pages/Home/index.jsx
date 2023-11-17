@@ -10,6 +10,7 @@ import Stylishly from "../../Components/Stylishly";
 import WorkPlanCards from "../../Components/WorkPlanCards";
 import StaticNumbers from "../../Components/StaticNumbers";
 import ArticlesNews from "../../Components/ArticlesNews";
+import Join from "../../Components/Join";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <OurProjects />
       <StaticNumbers />
       <ArticlesNews />
+      <Join />
     </motion.div>
   );
 };

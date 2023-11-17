@@ -9,7 +9,7 @@ const Blog = () => {
     <div>
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <Helmet>
-          <title></title>
+          <title>Blog</title>
         </Helmet>
 
         <Navigation />
