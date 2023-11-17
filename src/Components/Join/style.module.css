@@ -8,7 +8,7 @@
   gap: 10px;
   border-radius: 70px;
   background: #292f36;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .joinHeader {
@@ -31,4 +31,42 @@
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 992px) {
+  .joinContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .joinHeader {
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .joinContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .joinHeader {
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .joinContent p{
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .joinContent button{
+    width: 300px;
+  }
 }
