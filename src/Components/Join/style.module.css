@@ -1,7 +1,7 @@
 .joinContent {
   display: flex;
-  width: 1199px;
-  padding: 80px 315px;
+  width: 100%;
+  padding: 70px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,11 @@
   margin-bottom: 32px;
 }
 
-@media screen and (max-width: 992px) {
+.joinContent h3 {
+  margin: 0;
+}
+
+/* @media screen and (max-width: 992px) {
   .joinContent {
     display: flex;
     align-items: center;
@@ -69,4 +73,4 @@
   .joinContent button{
     width: 300px;
   }
-}
+} */
