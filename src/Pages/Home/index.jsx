@@ -11,6 +11,7 @@ import WorkPlanCards from "../../Components/WorkPlanCards";
 import StaticNumbers from "../../Components/StaticNumbers";
 import ArticlesNews from "../../Components/ArticlesNews";
 import Join from "../../Components/Join";
+import Footer from "../../Components/Footer";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <StaticNumbers />
       <ArticlesNews />
       <Join />
+      <Footer />
     </motion.div>
   );
 };
