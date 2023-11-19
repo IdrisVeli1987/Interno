@@ -1,7 +1,16 @@
 .FooterContent {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
+  gap: 110px;
+}
+
+.footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: red;
 }
 
 .FooterContent p {
@@ -17,5 +26,59 @@
 
 .SocialIcons {
   display: flex;
-  gap: 20px;
+  gap: 54px;
+  margin-top: 31px;
+  cursor: pointer;
+}
+
+.pages,
+.Services,
+.Contact {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pages h4,
+.Services h4,
+.Contact h4 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.pages p,
+.Services p,
+.Contact p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 50%; */
+  letter-spacing: 0.22px;
+}
+
+.Copyright {
+  width: 100%;
+  height: 73px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.Copyright p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+  border-top: 1px solid;
+  padding-top: 40px;
 }
