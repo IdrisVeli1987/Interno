@@ -8,8 +8,8 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <div className={`${styles.FooterContent} mt-5`}>
+    <div className="container ">
+      <div className={`${styles.FooterContent} mt-5 `}>
         <div className={`${styles.FooterLogo} `}>
           <Link to="/">
             <img
@@ -37,57 +37,59 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={`${styles.pages}`}>
-          <h4>Pages</h4>
-          <Link to="/about">
-            <p>About</p>
-          </Link>
-          <Link to="/OurProjects">
-            <p>Our Projects</p>
-          </Link>
-          <Link to="/#">
-            <p>Our Team</p>
-          </Link>
-          <Link to="/#">
-            <p>Contact Us</p>
-          </Link>
-          <Link to="/services">
-            <p>Services</p>
-          </Link>
-        </div>
-        <div className={`${styles.Services}`}>
-          <h4>Services</h4>
-          <Link to="#">
-            <p>Kitchan</p>
-          </Link>
-          <Link to="#">
-            <p>Liviing Area</p>
-          </Link>
-          <Link to="#">
-            <p>Bathroom</p>
-          </Link>
-          <Link to="#">
-            <p>Dining Hall</p>
-          </Link>
-          <Link to="#">
-            <p>Bedroom</p>
-          </Link>
-        </div>
-        <div className={`${styles.Contact}`}>
-          <h4>Contact</h4>
-          <p>
-            55 East Birchwood Ave. <br /> Brooklyn, New York 11201
-          </p>
-          <p>idrisveliev@gmail.com</p>
-          <p>(+994) 77-233-93-31</p>
+        <div className={styles.footerLinks}>
+          <div className={`${styles.pages}`}>
+            <h4>Pages</h4>
+            <Link to="/about">
+              <p>About</p>
+            </Link>
+            <Link to="/OurProjects">
+              <p>Our Projects</p>
+            </Link>
+            <Link to="/#">
+              <p>Our Team</p>
+            </Link>
+            <Link to="/#">
+              <p>Contact Us</p>
+            </Link>
+            <Link to="/services">
+              <p>Services</p>
+            </Link>
+          </div>
+          <div className={`${styles.Services}`}>
+            <h4>Services</h4>
+            <Link to="#">
+              <p>Kitchan</p>
+            </Link>
+            <Link to="#">
+              <p>Liviing Area</p>
+            </Link>
+            <Link to="#">
+              <p>Bathroom</p>
+            </Link>
+            <Link to="#">
+              <p>Dining Hall</p>
+            </Link>
+            <Link to="#">
+              <p>Bedroom</p>
+            </Link>
+          </div>
+          <div className={`${styles.Contact}`}>
+            <h4>Contact</h4>
+            <p>
+              55 East Birchwood Ave. <br /> Brooklyn, New York 11201
+            </p>
+            <p>idrisveliev@gmail.com</p>
+            <p>(+994) 77-233-93-31</p>
+          </div>
         </div>
       </div>
-        <div className={`${styles.Copyright}`}>
-          <p>
-            Copyright © Interno | Designed by Victorflow Templates - Powered by
-            Webflow
-          </p>
-        </div>
+      <div className={`${styles.Copyright}`}>
+        <p>
+          Copyright © Interno | Designed by Victorflow Templates - Powered by
+          Webflow
+        </p>
+      </div>
     </div>
   );
 };
