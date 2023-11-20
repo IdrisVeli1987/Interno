@@ -33,6 +33,11 @@ export const myRoutes = [
     title: "Blog",
   },
   {
+    id: 44,
+    path: "/blog/:id",
+    element: <Blog />,
+  },
+  {
     id: 5,
     path: "/contact",
     element: <Contact />,

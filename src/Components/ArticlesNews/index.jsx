@@ -18,7 +18,7 @@ const ArticlesNews = () => {
   }, []);
   return (
     <div className="container">
-      <div className="row mb-5">
+      <div className="row  mb-5">
         <div
           className={`${styles.ArticleHeader} col-xl-12 col-md-12 col-sm-12`}
         >
@@ -29,28 +29,30 @@ const ArticlesNews = () => {
             layouts the points of using.
           </p>
         </div>
-        <div className={`${styles.ArticleContent}  mt-5 w-10`}>
+        <div className="mt-5 row">
           {article.map(({ id, src, title, date, imageTitle }) => (
             <div
               key={id}
-              className={`${styles.ArticleBox} ${
+              className={`${
                 id === 2 && styles["ArticleBox-active"]
-              } col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4`}
+              } col-12  col-lg-4 col-xl-4`}
             >
-              <div className={`${styles.ArticleBoxImg}`}>
-                <img src={src} alt="image" />
-                <span className={styles.text}>{imageTitle}</span>
-              </div>
-              <h5 className={styles.ImageSubtitle}>{title}</h5>
-              <div className={styles.ImageDesc}>
-                <div className={styles.DescDate}>
-                  <p>{date}</p>
+              <div className={styles.ArticleBox}>
+                <div className={`${styles.ArticleBoxImg}`}>
+                  <img src={src} alt="image" />
+                  <span className={styles.text}>{imageTitle}</span>
                 </div>
-                <Link to={`/Blog/${id}`}>
-                  <button className={styles.ArticleArrow}>
-                    <MdOutlineArrowForwardIos />
-                  </button>
-                </Link>
+                <h5 className={styles.ImageSubtitle}>{title}</h5>
+                <div className={styles.ImageDesc}>
+                  <div className={styles.DescDate}>
+                    <p>{date}</p>
+                    <Link to={`/blog/${id}`}>
+                      <button className={styles.ArticleArrow}>
+                        <MdOutlineArrowForwardIos />
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

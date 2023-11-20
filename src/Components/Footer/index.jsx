@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import ScrollToTop from "react-scroll-up";
 
 const Footer = () => {
+  // <ScrollToTop showUnder={160}>
+  //   <span className={styles.scroll}>UP</span>
+  // </ScrollToTop>;
   return (
     <div className="container ">
       <div className={`${styles.FooterContent} mt-5 `}>
@@ -24,16 +28,16 @@ const Footer = () => {
           </p>
           <div className={`${styles.SocialIcons} `}>
             <Link to="http://Facebook.com">
-              <FaFacebookF />
+              <FaFacebookF style={{ color: "black" }} />
             </Link>
             <Link to="http://Twitter.com">
-              <FaTwitter />
+              <FaTwitter style={{ color: "black" }}/>
             </Link>
             <Link to="http://Linkedin.com">
-              <FaLinkedinIn />
+              <FaLinkedinIn style={{ color: "black" }}/>
             </Link>
             <Link to="http://Instagram.com">
-              <FaInstagram />
+              <FaInstagram style={{ color: "black" }}/>
             </Link>
           </div>
         </div>

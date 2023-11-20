@@ -29,14 +29,6 @@ p {
   letter-spacing: 0.22px;
 }
 
-.ArticleContent {
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 27px;
-}
-
 .ArticleBox {
   display: flex;
   /* align-items: center; */
@@ -115,6 +107,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .ArticleArrow {

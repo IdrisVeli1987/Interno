@@ -27,7 +27,7 @@ const OurProjects = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex justify-content-between flex-wrap alignItems-center bg-primary">
+      <div className="d-flex justify-content-between flex-wrap alignItems-center">
         {projects.length &&
           projects.map((proj) => {
             return <OurProject key={proj.id} {...proj} />;
