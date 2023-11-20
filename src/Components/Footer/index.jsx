@@ -5,12 +5,8 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import ScrollToTop from "react-scroll-up";
 
 const Footer = () => {
-  // <ScrollToTop showUnder={160}>
-  //   <span className={styles.scroll}>UP</span>
-  // </ScrollToTop>;
   return (
     <div className="container ">
       <div className={`${styles.FooterContent} mt-5 `}>
@@ -31,13 +27,13 @@ const Footer = () => {
               <FaFacebookF style={{ color: "black" }} />
             </Link>
             <Link to="http://Twitter.com">
-              <FaTwitter style={{ color: "black" }}/>
+              <FaTwitter style={{ color: "black" }} />
             </Link>
             <Link to="http://Linkedin.com">
-              <FaLinkedinIn style={{ color: "black" }}/>
+              <FaLinkedinIn style={{ color: "black" }} />
             </Link>
             <Link to="http://Instagram.com">
-              <FaInstagram style={{ color: "black" }}/>
+              <FaInstagram style={{ color: "black" }} />
             </Link>
           </div>
         </div>
