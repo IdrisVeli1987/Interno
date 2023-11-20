@@ -24,6 +24,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.18.0",
     "react-router-dom": "^6.18.0",
+    "react-scroll-up": "^1.4.0",
     "react-simple-star-rating": "^5.1.7",
     "react-visibility-sensor": "^5.1.1",
     "swiper": "^11.0.3"
