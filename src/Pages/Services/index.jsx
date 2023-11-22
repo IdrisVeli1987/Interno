@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
 import Join from "../../Components/Join";
+import ServicesWorkPlan from "../../Components/Services/ServicesWorkPlan";
 
 const Services = () => {
   return (
@@ -18,7 +19,7 @@ const Services = () => {
         page="Services"
         title="Services"
       />
-      servce
+      <ServicesWorkPlan />
       <Join />
       <Footer />
     </motion.div>
