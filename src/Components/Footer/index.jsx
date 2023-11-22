@@ -5,11 +5,14 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { MdMarkEmailRead } from "react-icons/md";
+import { IoMdPhonePortrait } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
 
 const Footer = () => {
   return (
     <div className="container ">
-      <div className={`${styles.FooterContent} mt-5 `}>
+      <div className={`${styles.FooterContent} mt-5 col-12 col-xl-12 col-md-6 `}>
         <div className={`${styles.FooterLogo} `}>
           <Link to="/">
             <img
@@ -76,15 +79,15 @@ const Footer = () => {
           </div>
           <div className={`${styles.Contact}`}>
             <h4>Contact</h4>
-            <p>
+            <p><CiLocationOn /> 
               55 East Birchwood Ave. <br /> Brooklyn, New York 11201
             </p>
-            <p>idrisveliev@gmail.com</p>
-            <p>(+994) 77-233-93-31</p>
+            <p><MdMarkEmailRead /> idrisveliev@gmail.com</p>
+            <p><IoMdPhonePortrait /> (+994) 77-233-93-31</p>
           </div>
         </div>
       </div>
-      <div className={`${styles.Copyright}`}>
+      <div className={`${styles.Copyright} `}>
         <p>
           Copyright © Interno | Designed by Victorflow Templates - Powered by
           Webflow
