@@ -21,7 +21,7 @@ const ServicesWorkPlan = () => {
             <div key={id} className={`col-4 my-5 ${styles.ServicesDesc}`}>
               <h5 className={`${styles.title}`}>{title}</h5>
               <p>{description}</p>
-              <Link className={styles.readMoreBtn}>
+              <Link className={`${styles.readMoreBtn} my-3`}>
                 Read More{" "}
                 <span>
                   <AiOutlineArrowRight />
