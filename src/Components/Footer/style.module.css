@@ -1,7 +1,7 @@
 .FooterContent {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  /* align-items: flex-start; */
   width: 100%;
 }
 
@@ -98,11 +98,16 @@
   padding-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .FooterContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footerLogo{
+    width: 100%;
   }
 
   .footerLinks {

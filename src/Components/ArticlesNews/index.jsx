@@ -37,7 +37,7 @@ const ArticlesNews = () => {
                 id === 2 && styles["ArticleBox-active"]
               } col-12  col-lg-4 col-xl-4`}
             >
-              <div className={styles.ArticleBox}>
+              <div className={`${styles.ArticleBox} col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100`}>
                 <div className={`${styles.ArticleBoxImg}`}>
                   <img src={src} alt="image" />
                   <span className={styles.text}>{imageTitle}</span>

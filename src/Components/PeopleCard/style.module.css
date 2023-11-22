@@ -53,11 +53,16 @@
 }
 
 @media screen and (max-width: 720px) {
-  .PeopleCard{
+  .PeopleCard {
     display: flex;
     align-items: flex-start;
+    justify-content: unset;
     padding: 15px;
-    height: 400px;
+    height: 300px;
+
+    .rate {
+      margin: auto 0 0 0;
+    }
   }
 
   .PeopleCard_top {
@@ -68,7 +73,7 @@
   }
 
   .userName {
-  font-family: DM Serif Display;
+    font-family: DM Serif Display;
     font-size: 15px;
   }
 
@@ -79,5 +84,6 @@
 
   .useDesc {
     font-size: 15px;
+    margin-top: 5px;
   }
 }

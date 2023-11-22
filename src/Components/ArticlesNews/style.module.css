@@ -8,10 +8,8 @@
 
 h3 {
   color: #292f36;
-  /* text-align: center; */
   font-family: DM Serif Display;
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 62.5px */
   letter-spacing: 1px;
@@ -23,7 +21,6 @@ p {
   text-align: center;
   font-family: Jost;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
@@ -31,12 +28,12 @@ p {
 
 .ArticleBox {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   border-radius: 62px;
   border: 1px solid #e7e7e7;
   padding: 20px;
+  margin: 10px; 
 }
 
 .ArticleBox:hover {

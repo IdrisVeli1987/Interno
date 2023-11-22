@@ -15,8 +15,8 @@ const Services = () => {
       <Navigation />
       <PageBanner
         src="../../Services/Banner/servicesBanner.svg"
-        page="Blog"
-        title="Articles & News"
+        page="Services"
+        title="Services"
       />
       servce
       <Join />

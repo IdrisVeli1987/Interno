@@ -8,8 +8,6 @@ import styles from "./style.module.css";
 const _url = "http://localhost:3000/users";
 
 const PeopleCards = () => {
- 
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -50,7 +48,6 @@ const PeopleCards = () => {
               {users.map((user) => {
                 return <PeopleCard key={user.id} {...user} />;
               })}
-              
             </Carousel>
           </div>
         </div>
