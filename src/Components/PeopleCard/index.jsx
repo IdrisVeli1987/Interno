@@ -10,7 +10,7 @@ const PeopleCard = ({ name, src, city, description }) => {
     setRating(rate);
   };
   return (
-    <div className={`${styles.PeopleCard}`}>
+    <div className={`${styles.PeopleCard} col-12 col-md-1 col-sm-2`}>
       <div className={styles.PeopleCard_top}>
         <img className={styles.image} src={src} alt={name} />
         <div>
