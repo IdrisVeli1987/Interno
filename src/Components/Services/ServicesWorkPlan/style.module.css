@@ -40,8 +40,17 @@
   gap: 10px;
   border-radius: 30px;
   background: #f4f0ec;
-  transition: 0.2s ease-out ;
+  transition: 0.2s ease-out;
 }
 .readMoreBtn {
   margin-bottom: 20px;
+  color: #4d5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.readMoreBtn span {
+  vertical-align: middle;
 }
