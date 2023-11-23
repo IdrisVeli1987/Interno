@@ -1,3 +1,30 @@
-.rafce{
-    display: flex;
+.WeWorkBox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 160px 116px;
+  gap: 10px;
+  border-radius: 70px;
+  background: #f4f0ec;
+}
+
+.WeWorkTitle {
+  color: #363b41;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.WeWorkSubtitle {
+  color: #4d5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+  width: 802px;
 }

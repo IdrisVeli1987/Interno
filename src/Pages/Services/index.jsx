@@ -6,6 +6,7 @@ import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
 import Join from "../../Components/Join";
 import ServicesWorkPlan from "../../Components/Services/ServicesWorkPlan";
+import WeWork from "../../Components/Services/WeWork";
 
 const Services = () => {
   return (
@@ -20,6 +21,7 @@ const Services = () => {
         title="Services"
       />
       <ServicesWorkPlan />
+      <WeWork />
       <Join />
       <Footer />
     </motion.div>
