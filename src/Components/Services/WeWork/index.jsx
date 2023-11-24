@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import axios from "axios";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const url = "http://localhost:3000/ServicesPageFiles";
 
 const WeWork = () => {
   const [servicePage, setServicePage] = useState([]);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   useEffect(() => {
     axios.get(url).then(({ data }) => {
@@ -15,10 +21,10 @@ const WeWork = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className={`${styles.WeWorkBox}`}>
+        <div className={`${styles.WeWorkBox} `}>
           <div className={`${styles.WeWorkTitle} `}>
-            <h2>How We Work</h2>
-            <p>
+            <h2 data-aos="fade-up" data-aos-duration="3000">How We Work</h2>
+            <p data-aos="fade-up">
               It is a long established fact will be distracted.Lorem Ipsum is
               simply dummy text of the printing and typesetting industry.
             </p>
@@ -41,7 +47,7 @@ const WeWork = () => {
                       <div className={`${styles.ContentTitle}`}>
                         <div>
                           <div className={styles.WorkIcon}>
-                            <img src={icon} alt="" />
+                            <img src={icon} alt="icon" />
                             <h3 style={{ order: 3 }}>
                               {index > 8 ? index + 1 : "0" + (index + 1)}
                             </h3>
