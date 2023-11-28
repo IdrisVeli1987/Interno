@@ -12,20 +12,24 @@ import { CiLocationOn } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="container ">
-      <div className={`${styles.FooterContent} mt-5 col-12 col-xl-12 col-md-6 `}>
-        <div className={`${styles.FooterLogo} `}>
+      <div
+        className={`${styles.FooterContent} row mt-5 col-12 col-xl-12 col-md-6 `}
+      >
+        <div
+          className={`${styles.FooterLogo} d-flex align-items-center justify-content-center `}
+        >
           <Link to="/">
             <img
-              className={`${styles.footerLogo} mb-2`}
+              className={`${styles.footerLogo} `}
               src="/Logo/Logo.svg"
               alt="Logo"
             />
           </Link>
-          <p>
+          <p className="row align-items-center text-center">
             It is a long established fact that a reader <br /> will be
             distracted lookings.
           </p>
-          <div className={`${styles.SocialIcons} `}>
+          <div className={`${styles.SocialIcons} mb-3 `}>
             <Link to="http://Facebook.com">
               <FaFacebookF style={{ color: "black" }} />
             </Link>
@@ -79,11 +83,17 @@ const Footer = () => {
           </div>
           <div className={`${styles.Contact}`}>
             <h4>Contact</h4>
-            <p><CiLocationOn /> 
+            <p>
+              <CiLocationOn />
               55 East Birchwood Ave. <br /> Brooklyn, New York 11201
             </p>
-            <p><MdMarkEmailRead /> idrisveliev@gmail.com</p>
-            <p><IoMdPhonePortrait /> (+994) 77-233-93-31</p>
+            <p className="d-flex align-items-center">
+              <MdMarkEmailRead />
+              <span className="ms-1"> idrisveliev@gmail.com</span>
+            </p>
+            <p>
+              <IoMdPhonePortrait /> (+994) 77-233-93-31
+            </p>
           </div>
         </div>
       </div>
