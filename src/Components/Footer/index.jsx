@@ -11,12 +11,12 @@ import { CiLocationOn } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <div className="container ">
+    <div className="container">
       <div
-        className={`${styles.FooterContent} row mt-5 col-12 col-xl-12 col-md-6 `}
+        className={`${styles.FooterContent} d-flex mt-5 col-12 col-xl-12 `}
       >
         <div
-          className={`${styles.FooterLogo} d-flex align-items-center justify-content-center `}
+          className={`${styles.FooterLogo} align-items-center justify-content-center `}
         >
           <Link to="/">
             <img
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerLinks}>
-          <div className={`${styles.pages}`}>
+          <div className={`${styles.pages} `}>
             <h4>Pages</h4>
             <Link to="/about">
               <p>About</p>
