@@ -160,13 +160,6 @@
 }
 
 @media screen and (max-width: 960px){
-  .container{
-    display: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; 
-    background-color: red;
-  }
   .FooterLogo {
     display: flex;
     align-items: center;
@@ -174,4 +167,4 @@
     width: 100%;
     margin-bottom: 10px;
   }
-}
+  } 

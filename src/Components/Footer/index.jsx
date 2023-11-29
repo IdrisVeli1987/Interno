@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <div className="container">
       <div
-        className={`${styles.FooterContent} d-flex mt-5 col-12 col-xl-12 `}
+        className={`${styles.FooterContent} d-flex gap-3 mt-5 col-12 col-xl-4 col-lg-6`}
       >
         <div
-          className={`${styles.FooterLogo} align-items-center justify-content-center `}
+          className={`${styles.FooterLogo} `}
         >
           <Link to="/">
             <img
@@ -25,7 +25,7 @@ const Footer = () => {
               alt="Logo"
             />
           </Link>
-          <p className="row align-items-center text-center">
+          <p >
             It is a long established fact that a reader <br /> will be
             distracted lookings.
           </p>
@@ -44,7 +44,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={styles.footerLinks}>
+        <div className={`${styles.footerLinks} `}>
           <div className={`${styles.pages} `}>
             <h4>Pages</h4>
             <Link to="/about">
@@ -87,7 +87,7 @@ const Footer = () => {
               <CiLocationOn />
               55 East Birchwood Ave. <br /> Brooklyn, New York 11201
             </p>
-            <p className="d-flex align-items-center">
+            <p >
               <MdMarkEmailRead />
               <span className="ms-1"> idrisveliev@gmail.com</span>
             </p>
