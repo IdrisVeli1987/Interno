@@ -1,0 +1,55 @@
+.Deatils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+}
+
+.Trends {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.Trends h2 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.TrendsP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.TrendsP .FirstP {
+  color: #cda274;
+  font-family: Jost;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.TrendsP .secondP {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.TrendsP .ThirdP {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: start;
+  margin-top: 28px;
+}

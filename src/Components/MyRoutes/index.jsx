@@ -6,6 +6,7 @@ import Blog from "../../Pages/Blog";
 import Contact from "../../Pages/Contact";
 import WorkPlanCardsDetail from "../../Pages/WorkPlanCardsDeatil";
 import ProjectDeatil from "../../Pages/ProjectDetail";
+import ServiceSingle from "../../Pages/ServiceSingle";
 
 export const myRoutes = [
   {
@@ -22,39 +23,45 @@ export const myRoutes = [
   },
   {
     id: 3,
+    path: "/serviceSingle/:id",
+    element: <ServiceSingle />,
+    title: "Services Single",
+  },
+  {
+    id: 4,
     path: "/project",
     element: <Project />,
     title: "Project",
   },
   {
-    id: 4,
+    id: 5,
     path: "/blog",
     element: <Blog />,
     title: "Blog",
   },
   {
-    id: 44,
+    id: 6,
     path: "/blog/:id",
     element: <Blog />,
   },
   {
-    id: 5,
+    id: 7,
     path: "/contact",
     element: <Contact />,
     title: "Contact",
   },
   {
-    id: 6,
+    id: 8,
     path: "/WorkPlanCardsDetail/:id",
     element: <WorkPlanCardsDetail />,
   },
   {
-    id: 7,
+    id: 9,
     path: "*",
     element: <ErrorPage />,
   },
   {
-    id: 8,
+    id: 10,
     path: "/project/:id",
     element: <ProjectDeatil />,
   },
