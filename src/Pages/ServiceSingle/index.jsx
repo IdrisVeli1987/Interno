@@ -7,6 +7,7 @@ import Footer from "../../Components/Footer";
 import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import ServiceDetails from "../../Components/ServiceDetails";
+import Interior from "../../Components/ServiceDetails/Interior";
 
 const ServiceSingle = () => {
   const { id } = useParams();
@@ -24,6 +25,7 @@ const ServiceSingle = () => {
       />
       <ServiceDetails />
       <CarouselComponent />
+      <Interior />
       <Footer />
     </motion.div>
   );
