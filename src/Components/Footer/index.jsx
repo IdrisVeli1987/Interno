@@ -12,12 +12,8 @@ import { CiLocationOn } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="container">
-      <div
-        className={`${styles.FooterContent} d-flex gap-3 mt-5 col-12 col-xl-4 col-lg-6`}
-      >
-        <div
-          className={`${styles.FooterLogo} `}
-        >
+      <div className={styles.FooterContent}>
+        <div className={`${styles.FooterLogo} `}>
           <Link to="/">
             <img
               className={`${styles.footerLogo} `}
@@ -25,7 +21,7 @@ const Footer = () => {
               alt="Logo"
             />
           </Link>
-          <p >
+          <p>
             It is a long established fact that a reader <br /> will be
             distracted lookings.
           </p>
@@ -87,7 +83,7 @@ const Footer = () => {
               <CiLocationOn />
               55 East Birchwood Ave. <br /> Brooklyn, New York 11201
             </p>
-            <p >
+            <p>
               <MdMarkEmailRead />
               <span className="ms-1"> idrisveliev@gmail.com</span>
             </p>
