@@ -43,7 +43,7 @@ const Interior = () => {
           <ol>
             {artList.map(({ id, description }) => {
               return (
-                <li key={id} className={`${styles.ArtList}`}>
+                <li key={id} className={`${styles.ArtList} `}>
                   {description}
                 </li>
               );

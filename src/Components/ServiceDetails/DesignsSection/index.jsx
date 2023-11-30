@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import img from "../../../../public/ServiceSingle/Design/DesignSection.svg";
+import Button from "../../Button";
 
 const DesignSection = () => {
   return (
@@ -17,8 +18,10 @@ const DesignSection = () => {
                 It is a long established fact that a reader will be distracted
                 by the of readable content .
               </p>
+              <Button title="Our Portfolio" arrow bg='dark'  />
             </div>
           </div>
+
         </div>
       </div>
     </div>
