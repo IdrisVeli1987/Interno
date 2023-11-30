@@ -1,0 +1,29 @@
+.UseList::marker, .ArtList::marker {
+  color: #cda274;
+}
+
+.Use,
+.Art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+.Use h4, .Art h4 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.Use li,
+.Art li {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  padding: 15px;
+}
