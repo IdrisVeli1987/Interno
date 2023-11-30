@@ -25,7 +25,6 @@ export const myRoutes = [
     id: 3,
     path: "/serviceSingle/:id",
     element: <ServiceSingle />,
-    title: "Services Single",
   },
   {
     id: 4,

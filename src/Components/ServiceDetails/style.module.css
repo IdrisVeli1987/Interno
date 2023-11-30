@@ -1,6 +1,5 @@
 .Deatils {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 200px;
   width: 100%;
@@ -8,7 +7,6 @@
 
 .Trends {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 50%;
 }
