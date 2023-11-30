@@ -20,13 +20,12 @@ const Interior = () => {
   useEffect(() => {
     axios.get(_url).then(({ data }) => {
       setArtList(data);
-      console.log(data);
     });
   }, []);
 
   return (
     <div className="container">
-      <div className={`${styles.InteriorBox} row`}>
+      <div className={`${styles.InteriorBox} row bg-primary`}>
         <div className={`${styles.Use} col-12 col-lg-6`}>
           <h4>Use of Interior</h4>
           <ol>

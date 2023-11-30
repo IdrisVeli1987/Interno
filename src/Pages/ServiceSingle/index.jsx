@@ -8,6 +8,7 @@ import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import ServiceDetails from "../../Components/ServiceDetails";
 import Interior from "../../Components/ServiceDetails/Interior";
+import DesignSection from "../../Components/ServiceDetails/DesignsSection";
 
 const ServiceSingle = () => {
   const { id } = useParams();
@@ -26,6 +27,7 @@ const ServiceSingle = () => {
       <ServiceDetails />
       <CarouselComponent />
       <Interior />
+      <DesignSection />
       <Footer />
     </motion.div>
   );

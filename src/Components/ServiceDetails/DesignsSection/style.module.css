@@ -1,0 +1,58 @@
+.DesignBox {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px;
+  gap: 80px;
+}
+
+.DesignImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.DesignImg img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 80px;
+  width: 100%;
+}
+
+.DesignText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.DesignLove {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.DesignLove h3 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 518px;
+}
+
+.DesignLove p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: start;
+  width: 500px;
+}
