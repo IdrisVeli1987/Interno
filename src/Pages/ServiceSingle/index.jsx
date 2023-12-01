@@ -9,6 +9,7 @@ import PageBanner from "../../Components/PageBanner";
 import ServiceDetails from "../../Components/ServiceDetails";
 import Interior from "../../Components/ServiceDetails/Interior";
 import DesignSection from "../../Components/ServiceDetails/DesignsSection";
+import DesignVideo from "../../Components/ServiceDetails/DesignVideo";
 
 const ServiceSingle = () => {
   const { id } = useParams();
@@ -26,6 +27,7 @@ const ServiceSingle = () => {
       />
       <ServiceDetails />
       <CarouselComponent />
+      <DesignVideo />
       <Interior />
       <DesignSection />
       <Footer />
