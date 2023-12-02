@@ -1,0 +1,25 @@
+.video {
+  position: relative;
+}
+
+.video {
+  width: 1200px;
+  height: 375px;
+  border-radius: 70px;
+  background: #292f36;
+  margin: 150px;
+}
+
+.video video,
+.video div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.playButton svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
