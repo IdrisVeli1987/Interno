@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f4f0ec;
-  margin-top: 150px;
+  margin: 150px 0 200px 0;
 }
 
 .staticNumber {
@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   padding-right: 50px;
+  margin-bottom: 50px;
 }
 
 .staticNumber:not(:last-child) {

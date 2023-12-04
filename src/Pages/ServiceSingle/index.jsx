@@ -10,6 +10,7 @@ import ServiceDetails from "../../Components/ServiceDetails";
 import Interior from "../../Components/ServiceDetails/Interior";
 import DesignSection from "../../Components/ServiceDetails/DesignsSection";
 import DesignVideo from "../../Components/ServiceDetails/DesignVideo";
+import StaticNumbers from "../../Components/StaticNumbers";
 
 const ServiceSingle = () => {
   const { id } = useParams();
@@ -30,6 +31,7 @@ const ServiceSingle = () => {
       <DesignVideo />
       <Interior />
       <DesignSection />
+      <StaticNumbers/>  
       <Footer />
     </motion.div>
   );
