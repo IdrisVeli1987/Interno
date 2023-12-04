@@ -11,15 +11,19 @@ const DesignVideo = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-12">
-          <div className={styles.video}>
+        <div className={`${styles.videoBox} col-12 col-xl-6 col-md-6`}>
+          <div className={`${styles.video} row col-12 col-xl-12 col-md-6`}>
             <ReactPlayer
               onPause={() => setIsplaying(!isPlaying)}
               url={video}
-              controls={false}
+              controls={true}
               playing={isPlaying}
               pause={isPause}
-              style={{ width: "1200px", height: "375px" }}
+              style={{
+                width: "1200px",
+                height: "375px",
+                borderRadius: "70px",
+              }}
             />
             <div
               className={classNames({
@@ -28,11 +32,10 @@ const DesignVideo = () => {
               })}
               onClick={() => setIsplaying(!isPlaying)}
             >
-              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="172"
-                height="172"
+                width="72"
+                height="72"
                 viewBox="0 0 172 172"
                 fill="none"
               >

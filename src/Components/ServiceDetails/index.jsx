@@ -5,13 +5,13 @@ const ServiceDetails = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className={`${styles.Deatils}`}>
-          <div className={`${styles.Trends}`}>
+        <div className={`${styles.Deatils} row col-12 col-xl-12 col-lg-6 g-1`}>
+          <div className={`${styles.Trends} d-flex justify-content-center col-12 col-xl-12`}>
             <h2>
               We set the trends of <br /> modern living <br /> Services.
             </h2>
           </div>
-          <div className={`${styles.TrendsP}`}>
+          <div className={`${styles.TrendsP} row col-12 col-xl-12 col-md-6 order-2`}>
             <p className={`${styles.FirstP}`}>
               It is a long established fact that a reader will be distracted by
               the of readable content of a page.
@@ -34,7 +34,6 @@ const ServiceDetails = () => {
             </p>
           </div>
         </div>
-        <div className="col-6"></div>
       </div>
     </div>
   );

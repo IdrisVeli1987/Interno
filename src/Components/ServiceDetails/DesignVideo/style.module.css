@@ -1,21 +1,49 @@
-.video {
-  position: relative;
-  width: 1200px;
-  height: 375px;
-  border-radius: 70px;
-  background: #292f36;
-}
-
-  .video video,
-.video div {
+.videoBox {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100% !important;
+  width: 40%;
+  margin: 150px;
+  }
+
+.video {
+  position: relative;
+  
+  width: 100%;
+  border-radius: 70px;
+  background-color: gold;
 }
+
 .playButton svg {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* .video {
+  width: 1200px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 70px;
+  background: gold;
+} */
+
+/* video {
+  border-radius: 50px;
+} */
+
+/* .videoBox{
+  width: 50%;
+  /* height: 100%; */
+/* background-color: red; */
+/* border-radius: 70px; */
+
+/* } */
+
+/* .video video,
+.video div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
