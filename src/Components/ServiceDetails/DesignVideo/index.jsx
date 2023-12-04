@@ -16,7 +16,7 @@ const DesignVideo = () => {
             <ReactPlayer
               onPause={() => setIsplaying(!isPlaying)}
               url={video}
-              controls={true}
+              controls={false}
               playing={isPlaying}
               pause={isPause}
               style={{ width: "1200px", height: "375px" }}
