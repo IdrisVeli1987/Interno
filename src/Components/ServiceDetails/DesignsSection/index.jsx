@@ -7,11 +7,11 @@ const DesignSection = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className={`${styles.DesignBox} row col-12 col-xl-12 col-lg-6`}>
-          <div className={`${styles.DesignImg} row col-12 col-xl-6`}>
+        <div className={`${styles.DesignBox}`}>
+          <div className={`${styles.DesignImg}`}>
             <img src={img} alt="" />
           </div>
-          <div className={`${styles.DesignText} row col-6 col-xl-6`}>
+          <div className={`${styles.DesignText}`}>
             <div className={`${styles.DesignLove}`}>
               <h3>We love design.That's how we got here.</h3>
               <p>

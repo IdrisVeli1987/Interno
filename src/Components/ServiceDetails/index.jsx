@@ -1,23 +1,20 @@
 import React from "react";
 import styles from "./style.module.css";
-import { FaBars } from "react-icons/fa6";
-import { useState } from "react";
 
 const ServiceDetails = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  return (
+    return (
     <div className="container">
       <div className="row">
         <div className={`${styles.Deatils} row col-12 col-xl-12 col-lg-6 g-1`}>
           <div
-            className={`${styles.Trends} d-flex justify-content-center col-12 col-xl-12`}
+            className={`${styles.Trends} col-12 col-xl-12 col-md-8`}
           >
             <h2>
-              We set the trends of <br /> modern living <br /> Services.
+              We set the trends of modern living Services.
             </h2>
           </div>
           <div
-            className={`${styles.TrendsP} row col-12 col-xl-12 col-md-6 order-2`}
+            className={`${styles.TrendsP} row col-12 col-xl-12 col-md-6`}
           >
             <p className={`${styles.FirstP}`}>
               It is a long established fact that a reader will be distracted by
@@ -42,14 +39,6 @@ const ServiceDetails = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`d-block d-md-none ${styles.bars}`}
-        onClick={() => {
-          setShowMenu(!showMenu);
-        }}
-      >
-        <FaBars />
-      </div>  
     </div>
   );
 };

@@ -11,8 +11,8 @@ const DesignVideo = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className={`${styles.videoBox} col-12 `}>
-          <div className={`${styles.video} row col-12`}>
+        <div className={`${styles.videoBox}`}>
+          <div className={`${styles.video}`}>
             <ReactPlayer
               onPause={() => setIsplaying(!isPlaying)}
               url={video}

@@ -16,6 +16,7 @@
   font-family: DM Serif Display;
   font-size: 50px;
   font-weight: 400;
+  width: 70%;
 }
 
 .TrendsP {
@@ -50,4 +51,28 @@
   font-weight: 400;
   text-align: start;
   margin-top: 28px;
+}
+
+@media screen and (max-width: 992px) {
+ .Deatils{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .Trends{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+ }
+
+ .Trends h2{
+  width: 45%;
+  font-size: 40px;
+  margin-bottom: 30px;
+ }
 }

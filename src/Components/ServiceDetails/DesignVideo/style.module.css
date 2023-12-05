@@ -1,5 +1,5 @@
 .videoBox {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -11,16 +11,16 @@
 }
 
 video {
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
   height: 374px;
   border-radius: 70px;
 }
 
-.video div{
+.video div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,3 +34,15 @@ video {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 992px) {
+.container{
+  width: 5%;
+}
+
+  .videoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
