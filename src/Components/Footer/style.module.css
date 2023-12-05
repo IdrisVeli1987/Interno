@@ -49,9 +49,7 @@
 .Contact {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
 }
 
@@ -68,7 +66,9 @@
 }
 
 .Contact h4 {
-  padding-left: 50px;
+  display: flex;
+  align-items: flex-start ;
+  padding-left: 30px;
 }
 
 .pages p,
@@ -80,13 +80,21 @@
   font-family: Jost;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   width: 100%;
   gap: 10px;
 }
 
 .Contact .IconComponent {
   font-size: 20px;
+  /* background-color: red; */
+  font-size: 20px;
+}
+
+.IconComponentLocation{
+  display: flex;
+  align-self: flex-start;
+  font-size: 50px;
 }
 
 .Copyright {

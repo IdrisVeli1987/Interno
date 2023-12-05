@@ -11,6 +11,7 @@ const Interior = () => {
 
   const [artList, setArtList] = useState([]);
 
+
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       setUseList(data);

@@ -80,8 +80,8 @@ const Footer = () => {
           <div className={`${styles.Contact} `}>
             <h4>Contact</h4>
             <p>
-              <CiLocationOn className={styles.IconComponent} />
-              55 East Birchwood Ave. <br /> Brooklyn, New York 11201
+              <CiLocationOn className={styles.IconComponentLocation} />
+              Building 187C, 115 Heydar Aliyev Ave, Baku 1029
             </p>
             <p>
               <MdMarkEmailRead className={styles.IconComponent} />
