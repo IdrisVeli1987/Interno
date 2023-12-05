@@ -77,18 +77,19 @@ const Footer = () => {
               <p>Bedroom</p>
             </Link>
           </div>
-          <div className={`${styles.Contact}`}>
+          <div className={`${styles.Contact} `}>
             <h4>Contact</h4>
             <p>
-              <CiLocationOn />
+              <CiLocationOn className={styles.IconComponent} />
               55 East Birchwood Ave. <br /> Brooklyn, New York 11201
             </p>
             <p>
-              <MdMarkEmailRead />
+              <MdMarkEmailRead className={styles.IconComponent} />
               <span className="ms-1"> idrisveliev@gmail.com</span>
             </p>
             <p>
-              <IoMdPhonePortrait /> (+994) 77-233-93-31
+              <IoMdPhonePortrait className={styles.IconComponent} /> (+994)
+              77-233-93-31
             </p>
           </div>
         </div>
