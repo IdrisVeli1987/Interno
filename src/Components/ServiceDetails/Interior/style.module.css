@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 50%;
 }
 
@@ -39,3 +40,25 @@
   text-align: start;
 }
 
+@media screen and (max-width: 992px) {
+  .InteriorBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Use,
+  .Art {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: red;  */
+  }
+
+  .Use h4,
+  .Art h4 {
+    display: flex;
+    align-items: flex-start;
+  }
+}

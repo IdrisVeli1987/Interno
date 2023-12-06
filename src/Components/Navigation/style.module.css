@@ -59,6 +59,7 @@ header {
     border: 1px solid #cda274;
     padding-top: 30px;
     gap: 20px;
+    z-index: 1;
 
     .navLink::after,
     .navLink:hover:after {

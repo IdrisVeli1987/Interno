@@ -68,7 +68,7 @@ button {
   font-size: 18px;
   font-weight: 600;
   flex-direction: row;
-  width: 60%;
+  width: 40% !important;
   margin-top: 32px;
 }
 
@@ -98,8 +98,19 @@ button {
     width: 100%;
   }
 
+  .DesignLove h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .DesignLove p {
+    text-align: center;
+  }
+
   button{
-    width: 60% !important;
+    width: 40% !important;
     font-size: 20px !important;
   }
 
