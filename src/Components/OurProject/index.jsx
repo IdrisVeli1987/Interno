@@ -25,7 +25,7 @@ const OurProject = ({ id, src, title, description }) => {
             >
               <MdOutlineArrowForwardIos />
             </button>
-          </Link>
+          </Link> 
         </div>
       </div>
     </div>

@@ -68,7 +68,7 @@ button {
   font-size: 18px;
   font-weight: 600;
   flex-direction: row;
-  width: 40% !important;
+  /* width: 40% !important; */
   margin-top: 32px;
 }
 
