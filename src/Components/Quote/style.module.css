@@ -13,7 +13,8 @@
   justify-content: center;
   gap: 27px;
   width: 700px;
-  /* margin-top: 300px; */
+  position: relative;
+  margin-top: 300px;
 }
 
 .Quote h1 {
@@ -24,4 +25,17 @@
   font-style: italic;
   font-weight: 400;
   /* background-color: gold; */
+}
+
+.Quote::before {
+  content: url("../public/AboutUs/Quote/Pattern1.svg");
+  position: absolute;
+  width: 100%;
+  left: -50px;
+}
+
+.Quote::after {
+  content: url("../public/AboutUs/Quote/Pattern2.svg");
+  position: absolute;
+  right: -50px;
 }
