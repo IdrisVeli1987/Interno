@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 import { Rating } from "react-simple-star-rating";
+import { Link } from "react-router-dom";
 
 const PeopleCard = ({ name, src, city, description }) => {
   const [rating, setRating] = useState(0); // initial rating value
@@ -28,10 +29,11 @@ const PeopleCard = ({ name, src, city, description }) => {
           transition
           fillColor="orange"
           emptyColor="gray"
-          className="foo" 
+          className="foo"
         />
         {rating}
       </div>
+      <Link to="/AboutUs">Read more</Link>
     </div>
   );
 };
