@@ -1,0 +1,27 @@
+.AuthorQuotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 428px;
+  flex-shrink: 0;
+}
+
+.Quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  width: 700px;
+  /* margin-top: 300px; */
+}
+
+.Quote h1 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  /* background-color: gold; */
+}
