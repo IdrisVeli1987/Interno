@@ -7,6 +7,7 @@ import Contact from "../../Pages/Contact";
 import WorkPlanCardsDetail from "../../Pages/WorkPlanCardsDeatil";
 import ProjectDeatil from "../../Pages/ProjectDetail";
 import ServiceSingle from "../../Pages/ServiceSingle";
+import AboutUs from "../../Pages/AboutUs";
 
 export const myRoutes = [
   {
@@ -63,5 +64,10 @@ export const myRoutes = [
     id: 10,
     path: "/project/:id",
     element: <ProjectDeatil />,
+  },
+  {
+    id: 11,
+    path: "/AboutUs",
+    element: <AboutUs />,
   },
 ];
