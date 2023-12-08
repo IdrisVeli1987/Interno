@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
-import Quote from "../../Components/Quote";
+import Quote from "../../Components/AboutUs/Quote";
 
 const AboutUs = () => {
   return (
