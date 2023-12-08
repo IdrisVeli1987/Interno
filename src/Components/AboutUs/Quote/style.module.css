@@ -1,0 +1,68 @@
+.AuthorQuotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 428px;
+  flex-shrink: 0;
+  margin: 300px 0;
+}
+
+.Quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  max-width: 700px;
+  position: relative;
+}
+
+.Quote h1 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.Quote::before {
+  content: url("../public/AboutUs/Quote/Pattern1.svg");
+  position: absolute;
+  width: 100%;
+  left: -100px;
+}
+
+.Quote::after {
+  content: url("../public/AboutUs/Quote/Pattern2.svg");
+  position: absolute;
+  right: -100px;
+}
+
+@media screen and (max-width: 992px) {
+  .AuthorQuotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px 0;
+  }
+
+  .Quote{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0;
+  }
+
+  /* .Quote::before,
+  .Quote::after {
+    width: 20%;
+  } */
+
+  .Quote h1{
+    font-size: 25px;
+    margin: 0;
+  }
+}
