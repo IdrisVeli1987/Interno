@@ -5,6 +5,7 @@ import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
 import Quote from "../../Components/AboutUs/Quote";
+import WhatWeDo from "../../Components/AboutUs/WhatWeDo";
 
 const AboutUs = () => {
   return (
@@ -20,6 +21,7 @@ const AboutUs = () => {
           title="About Us"
         />
         <Quote />
+        <WhatWeDo />
         <Footer />
       </motion.div>
     </div>
