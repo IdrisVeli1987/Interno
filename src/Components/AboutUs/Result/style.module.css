@@ -1,0 +1,42 @@
+.ResultBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 85px 0;
+}
+
+.ResultImg {
+  gap: 90px;
+}
+
+.ResultImg img {
+  border-radius: 70px;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.ResultText {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.ResultText h3 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.ResultText p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  width: 500px;
+}
