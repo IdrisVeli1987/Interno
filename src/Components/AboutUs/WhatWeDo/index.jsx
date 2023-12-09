@@ -25,7 +25,12 @@ const WhatWeDo = () => {
                   <h3>{title}</h3>
                   <p>{description}</p>
                   <div className={styles.ToPortfolio}>
-                    <Button title="Our Portfolio" arrow  bg="dark" color="#CDA274"/>
+                    <Button
+                      title="Our Portfolio"
+                      arrow
+                      bg="dark"
+                      color="#CDA274"
+                    />
                   </div>
                 </div>
               </div>
