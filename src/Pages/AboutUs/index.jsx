@@ -6,6 +6,7 @@ import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
 import Quote from "../../Components/AboutUs/Quote";
 import WhatWeDo from "../../Components/AboutUs/WhatWeDo";
+import Result from "../../Components/AboutUs/Result";
 
 const AboutUs = () => {
   return (
@@ -22,6 +23,7 @@ const AboutUs = () => {
         />
         <Quote />
         <WhatWeDo />
+        <Result/>
         <Footer />
       </motion.div>
     </div>
