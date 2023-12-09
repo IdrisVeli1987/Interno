@@ -1,6 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Button from "../../Button";
 
 const url = "http://localhost:3000/WhatWeDo";
 
@@ -21,6 +24,9 @@ const WhatWeDo = () => {
                 <div className={`${styles.WedoTitle}`}>
                   <h3>{title}</h3>
                   <p>{description}</p>
+                  <div className={styles.ToPortfolio}>
+                    <Button title="Our Portfolio" arrow  bg="dark" color="#CDA274"/>
+                  </div>
                 </div>
               </div>
               <div className={styles.WeDoImg}>
