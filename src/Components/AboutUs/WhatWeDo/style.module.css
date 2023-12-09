@@ -1,0 +1,43 @@
+.WeDoContent {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 35px;
+  width: 100%;
+}
+
+.WeDoText {
+  display: flex;
+  align-items: flex-start;   
+  width: 50%;
+}
+
+.WedoTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 41px;
+  width: 500px;
+}
+
+.WedoTitle h3 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  /* letter-spacing: 1px;   */
+}
+
+.WedoTitle p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.WeDoImg img {
+  width: 659px;
+  height: 377px;
+  border-radius: 70px;
+  background: #c4c4c4;
+}
