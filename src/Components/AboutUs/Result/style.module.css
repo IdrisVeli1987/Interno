@@ -19,7 +19,7 @@
 .ResultText {
   display: flex;
   width: 500px;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: flex-start;
   gap: 23px;
 }
@@ -39,4 +39,20 @@
   font-weight: 400;
   text-align: left;
   width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .ResultBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .ResultImg{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: gold; */
+  }
 }
