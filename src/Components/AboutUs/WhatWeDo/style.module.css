@@ -47,6 +47,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10px; 
+  gap: 10px;
+  border-radius: 18px;
+  width: 60%;
 }
 
+@media screen and (max-width: 992px) {
+  .WeDoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    max-width: 100%;
+
+    background-color: red;
+  }
+}
