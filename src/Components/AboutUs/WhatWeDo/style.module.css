@@ -55,50 +55,86 @@
 @media screen and (max-width: 992px) {
   .WeDoContent {
     display: flex;
-    flex-direction: column;
     align-items: center;
     overflow-y: hidden;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin-top: 50px;
   }
 
-  .WeDoText{
+  .WeDoText {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    /* max-width: 50%; */
   }
 
-  .WedoTitle{
+  .WedoTitle {
     text-align: center;
   }
 
-  .WedoTitle h3{
-    font-size: 35px;
+  .WedoTitle h3 {
+    font-size: 50px;
+    text-align: left;
   }
 
-  .ToPortfolio{
+  .WedoTitle p {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 90%;
+    font-size: 30px;
+    margin-top: 20px;
   }
-  
+
+  .ToPortfolio {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
   .ToPortfolio button {
-    min-width: 100%;
+    min-width: 90%;
   }
 
-  .WeDoImg{
+  .WeDoImg img {
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 50%;
-    margin-top: 50px;
-    /* background-color: gold; */
-  }
-
-  .WeDoImg img{
+    justify-content: center;
     width: 100%;
     height: 100%;
   }
+}
 
+@media screen and (max-width: 768px){
+  .WeDoContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
+
+  .WeDoText{
+    width: 100%;
+    margin-top: 20px;
+    order: 1;
+  }
+
+  .WedoTitle h3{
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+  } 
+
+  .WedoTitle p {
+    padding: 20px 0;
+    text-align: start;
+    width: 100%;
+  }
+  
+  .ToPortfolio{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+ 
+}
