@@ -5,10 +5,6 @@
   margin: 85px 0;
 }
 
-.ResultImg {
-  gap: 90px;
-}
-
 .ResultImg img {
   border-radius: 70px;
   width: 100%;
@@ -18,8 +14,7 @@
 
 .ResultText {
   display: flex;
-  width: 500px;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   gap: 23px;
 }
@@ -38,21 +33,37 @@
   font-size: 22px;
   font-weight: 400;
   text-align: left;
-  width: 500px;
 }
 
 @media screen and (max-width: 992px) {
-  .ResultBox{
+  .ResultBox {
     display: flex;
     align-items: center;
     width: 100%;
-    /* background-color: red; */
   }
 
-  .ResultImg{
+  .ResultImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ResultBox {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 20px;
     width: 100%;
-    /* background-color: gold; */
+  }
+
+  .ResultImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30px;
   }
 }
