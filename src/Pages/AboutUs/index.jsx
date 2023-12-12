@@ -7,6 +7,7 @@ import Footer from "../../Components/Footer";
 import Quote from "../../Components/AboutUs/Quote";
 import WhatWeDo from "../../Components/AboutUs/WhatWeDo";
 import Result from "../../Components/AboutUs/Result";
+import PeopleThinks from "../../Components/AboutUs/PeopleThinks";
 
 const AboutUs = () => {
   return (
@@ -24,6 +25,7 @@ const AboutUs = () => {
         <Quote />
         <WhatWeDo />
         <Result/>
+        <PeopleThinks/>
         <Footer />
       </motion.div>
     </div>
