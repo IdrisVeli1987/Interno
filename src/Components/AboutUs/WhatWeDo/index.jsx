@@ -17,9 +17,9 @@ const WhatWeDo = () => {
       <div className="row">
         {weDo.map(({ id, title, description, src }) => {
           return (
-            <div key={id} className={styles.WeDoContent}>
-              <div className={`${styles.WeDoText} row col-12 col-xl-12`}>
-                <div className={`${styles.WedoTitle} row col-xl-12`}>
+            <div key={id} className={`${styles.WeDoContent} col-6 col-xl-12 `}>
+              <div className={`${styles.WeDoText}`}>
+                <div className={`${styles.WedoTitle}`}>
                   <h3>{title}</h3>
                   <p>{description}</p>
                   <div className={styles.ToPortfolio}>
