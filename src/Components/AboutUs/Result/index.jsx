@@ -25,9 +25,7 @@ const Result = () => {
                     <img src={src} alt="" />
                   </div>
                 </div>
-                <div
-                  className={`${styles.ResultText} col-12 col-xl-6 ps-0 ps-xl-5`}
-                >
+                <div className={`${styles.ResultText} col-12 col-xl-6 ps-0 ps-xl-5`}>
                   <div>
                     <h3>{title}</h3>
                     <p>{description}</p>
