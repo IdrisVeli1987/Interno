@@ -43,7 +43,7 @@
 
 .WeDoImg img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 70px;
   background: #c4c4c4;
 }

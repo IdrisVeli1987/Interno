@@ -1,0 +1,28 @@
+.PeopleContent {
+  background: #f4f0ec;
+}
+
+.peopleThinksTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  /* height: 126px; */
+  /* margin: 0 auto; */
+  background-color: red;
+}
+
+.PeopleCardTitle {
+  /* width: 547px; */
+  /* height: 126px; */
+  background-color: gold;
+  text-align: center;
+}
+
+.PeopleCardTitle h3 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+}
