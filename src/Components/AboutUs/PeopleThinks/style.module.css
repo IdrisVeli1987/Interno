@@ -25,8 +25,70 @@
   font-weight: 400;
 }
 
-.PeopleContentImg{
+.PeopleContentImg {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 22px;
+  margin-bottom: 185px;
+}
+
+.PeopleContentImg img {
+  border-radius: 30px;
+  background-color: gold;
+  order: 1;
+}
+
+.EmptyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 283px;
+  height: 433px;
+  border-radius: 30px;
+  order: 2;
+  background-color: #fff;
+}
+
+.EmptyCard h3 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.EmptyCard p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.EmpatyCardIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 2;
+  gap: 25px;
+  margin: 65px 0 65px 0;
+}
+
+.EmptyCardContact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.CardPhone,
+.CardEmail
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* margin-right: 10px; */
 }
