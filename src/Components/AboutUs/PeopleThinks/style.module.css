@@ -9,14 +9,12 @@
   width: 100vw;
   /* height: 126px; */
   /* margin: 0 auto; */
-  background-color: red;
 }
 
 .PeopleCardTitle {
-  /* width: 547px; */
-  /* height: 126px; */
-  background-color: gold;
   text-align: center;
+  margin-top: 180px;
+  margin: 185px 0 40px 0;
 }
 
 .PeopleCardTitle h3 {
@@ -25,4 +23,10 @@
   font-family: DM Serif Display;
   font-size: 50px;
   font-weight: 400;
+}
+
+.PeopleContentImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
