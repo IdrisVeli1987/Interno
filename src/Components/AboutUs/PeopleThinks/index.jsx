@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 
 const url = "http://localhost:3000/PeopleThinks";
@@ -25,6 +26,24 @@ const PeopleThinks = () => {
             </h3>
           </div>
           <div className={styles.PeopleContentImg}>
+            <div className={styles.EmptyCard}>
+              <h3>Nattasha Julie</h3>
+              <p>Design, Australia</p>
+              <div className={styles.EmpatyCardIcons}>
+                <FaFacebook />
+                <FaTwitter />
+                <FaLinkedinIn />
+                <FaInstagram />
+              </div>
+              <div className={styles.EmptyCardContact}>
+                <Link to="+1 (378) 400-1234" className={styles.CardPhone}>
+                  +1 (378) 400-1234
+                </Link>
+                <Link to="julie@email.com" className={styles.CardEmail}>
+                  julie@email.com
+                </Link>
+              </div>
+            </div>
             {peopleThinks.map(({ id, src }) => (
               <img key={id} src={src} alt="" />
             ))}
