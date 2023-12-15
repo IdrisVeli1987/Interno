@@ -12,20 +12,24 @@ const PeopleThinks = () => {
       setPeopleThinks(data);
     });
   }, []);
+
+  // const img = [src1, src2, src3];
+
   return (
-    <div className={`${styles.container}`}>
+    <div className="container-fluid">
       <div className="row">
-        {peopleThinks.map(({ id, src }) => {
-          return (
-            <div key={id} className={styles.PeopleContent}>
-              <div className={styles.peopleThinksTitle}>
-                <h3 className={`${styles.PeopleCardTitle}`}>
-                  What the People Thinks <br /> About Us
-                </h3>
-              </div>
-            </div>
-          );
-        })}
+        <div className={styles.PeopleContent}>
+          <div className={styles.peopleThinksTitle}>
+            <h3 className={`${styles.PeopleCardTitle}`}>
+              What the People Thinks <br /> About Us
+            </h3>
+          </div>
+          <div className={styles.PeopleContentImg}>
+            {peopleThinks.map(({ id, src }) => (
+              <img key={id} src={src} alt="" />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
