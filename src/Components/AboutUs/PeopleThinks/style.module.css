@@ -13,7 +13,7 @@
 
 .PeopleCardTitle {
   text-align: center;
-  margin-top: 180px;
+  /* margin-top: 180px; */
   margin: 185px 0 40px 0;
 }
 
@@ -31,22 +31,21 @@
   justify-content: center;
   gap: 22px;
   margin-bottom: 185px;
+  width: 100%;  
 }
 
 .PeopleContentImg img {
   border-radius: 30px;
-  /* order: 1; */
 }
 
 .EmptyCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 283px;
-  height: 433px;
   border-radius: 30px;
-  order: 2;
   background-color: #fff;
+  width: 18rem;
+  height: 28rem;
 }
 
 .EmptyCard h3 {
@@ -72,6 +71,7 @@
   flex-shrink: 2;
   gap: 25px;
   margin: 65px 0 65px 0;
+  cursor: pointer;
 }
 
 .EmptyCardContact {
@@ -85,7 +85,7 @@
 .PeopleContent img,
 .EmptyCard {
   transition: 1s; /* effektin vaxti */
-  display: block;
+  /* display: block; */
 }
 
 .PeopleContent img:hover,
@@ -100,10 +100,13 @@
   justify-content: center;
   gap: 10px;
   color: #000;
+  cursor: pointer;
 }
 
 .PeopleImageBox{
   display: flex;
+  /* width: 100%;   */
+  height: auto;
   align-items: center;
   justify-content: center;
 }
@@ -123,3 +126,4 @@
 .PeopleImageBox:nth-child(4){
   order: 3;
 }
+
