@@ -1,14 +1,14 @@
 .PeopleContent {
   background: #f4f0ec;
+  margin-bottom: 210px;
+  width: 100%;
 }
 
 .peopleThinksTitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  /* height: 126px; */
-  /* margin: 0 auto; */
+  width: 100%;
 }
 
 .PeopleCardTitle {
@@ -35,8 +35,7 @@
 
 .PeopleContentImg img {
   border-radius: 30px;
-  background-color: gold;
-  order: 1;
+  /* order: 1; */
 }
 
 .EmptyCard {
@@ -75,7 +74,7 @@
   margin: 65px 0 65px 0;
 }
 
-.EmptyCardContact{
+.EmptyCardContact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,12 +82,44 @@
   gap: 20px;
 }
 
+.PeopleContent img,
+.EmptyCard {
+  transition: 1s; /* effektin vaxti */
+  display: block;
+}
+
+.PeopleContent img:hover,
+.EmptyCard:hover {
+  transform: scale(1.1); /* sekilin mashtabini boyudur */
+}
+
 .CardPhone,
-.CardEmail
-{
+.CardEmail {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  /* margin-right: 10px; */
+  color: #000;
+}
+
+.PeopleImageBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PeopleImageBox:nth-child(1){
+  order: 1;
+}
+
+.PeopleImageBox:nth-child(2){
+  order: -1;
+}
+
+.PeopleImageBox:nth-child(3){
+  order: -1;
+}
+
+.PeopleImageBox:nth-child(4){
+  order: 3;
 }
