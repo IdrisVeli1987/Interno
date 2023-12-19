@@ -41,3 +41,18 @@
   color: #4d5053;
   font-family: Jost;
 }
+
+.FormBtn {
+  display: flex;
+  /* padding: 26px 54px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.FormBtn Button {
+  border-radius: 28px;
+  background: #292f36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
