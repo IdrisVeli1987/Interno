@@ -27,19 +27,21 @@ const Forms = () => {
           <div className={styles.FormContent}>
             <form onSubmit={form.handleSubmit}>
               <div className={styles.FormInput}>
-                <input type="name" name="name" placeholder="name" required />
+                <input type="name" name="name" placeholder="Name" required />
                 <input
                   type="email"
                   email="email"
-                  placeholder="email"
+                  placeholder="Email"
                   required
                 />
               </div>
-              <textarea
-                type="text"
-                name="message"
-                placeholder="Text"
-              ></textarea>
+              <div className={styles.FormTextarea}>
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder="Text"
+                ></textarea>
+              </div>
             </form>
           </div>
         </div>
