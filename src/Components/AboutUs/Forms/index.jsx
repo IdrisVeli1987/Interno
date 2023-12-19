@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./style.module.css";
 import { useFormik } from "formik";
+import Button from "../../Button";
+import { Link } from "react-router-dom";
 
 const Forms = () => {
   const form = useFormik({
@@ -41,6 +43,16 @@ const Forms = () => {
                   name="message"
                   placeholder="Text"
                 ></textarea>
+              </div>
+              <div className={styles.FormBtn}>
+                <Link to="/contact">
+                  <Button
+                    title="Send Now"
+                    arrow
+                    bg="dark"
+                    color="black"
+                  />
+                </Link>
               </div>
             </form>
           </div>
