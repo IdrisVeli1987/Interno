@@ -8,6 +8,8 @@ import Quote from "../../Components/AboutUs/Quote";
 import WhatWeDo from "../../Components/AboutUs/WhatWeDo";
 import Result from "../../Components/AboutUs/Result";
 import PeopleThinks from "../../Components/AboutUs/PeopleThinks";
+import Forms from "../../Components/AboutUs/Forms";
+import MyForm from "../../Components/AboutUs/Forms";
 
 const AboutUs = () => {
   return (
@@ -26,6 +28,7 @@ const AboutUs = () => {
         <WhatWeDo />
         <Result/>
         <PeopleThinks/>
+        <MyForm />
         <Footer />
       </motion.div>
     </div>
