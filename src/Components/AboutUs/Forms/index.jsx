@@ -28,7 +28,9 @@ const Forms = () => {
           </div>
           <div className={styles.FormContent}>
             <form onSubmit={form.handleSubmit}>
-              <div className={`${styles.FormInput} row col-12 col-xl-12 col-sm-10`}>
+              <div
+                className={`${styles.FormInput} row col-12 col-xl-12 col-sm-10`}
+              >
                 <input type="name" name="name" placeholder="Name" required />
                 <input
                   type="email"
@@ -36,23 +38,24 @@ const Forms = () => {
                   placeholder="Email"
                   required
                 />
+                <div
+                  className={`${styles.FormTextarea} row col-12 col-xl-12 col-sm-10`}
+                >
+                  <textarea
+                    type="text"
+                    name="message"
+                    placeholder="Text"
+                    className="row col-12 col-xl-12 col-sm-2"
+                  ></textarea>
+                </div>
               </div>
-              <div className={`${styles.FormTextarea} row col-12 col-xl-12 col-sm-10`}>
-                <textarea
-                  type="text"
-                  name="message"
-                  placeholder="Text"
-                  className="row col-12 col-xl-12 col-sm-2"
-                ></textarea>
-              </div>
-              <div className={`${styles.FormBtn}`}>
-                <Link to="/contact" className={`${styles.FormLink}`}>
-                  <Button
-                    title="Send Now"
-                    arrow
-                    bg="dark"
-                    color="black"
-                  />
+
+              <div className={`${styles.FormBtn} row col-12 col-xl-12`}>
+                <Link
+                  to="/contact"
+                  className={`${styles.FormLink} row col-12 col-xl-12 w-100%`}
+                >
+                  <Button title="Send Now" arrow bg="dark" color="black" />
                 </Link>
               </div>
             </form>
