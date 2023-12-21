@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .FormInput input {
@@ -36,14 +36,15 @@
 }
 
 .FormTextarea textarea {
-  width: 100%;
+  width: 300px;
+  /* width: 100%; */
   font-size: 22px;
   height: 175px;
   margin-bottom: 77px;
   resize: none;
   border: 0;
   border-bottom: 1px solid #000000;
-  background-color: red;
+  padding: 0;
 }
 
 .FormTextarea textarea::placeholder {
@@ -58,34 +59,30 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .FormBtn Button {
   border-radius: 28px;
+  width: 300px !important;
+  text-align: center;
+  margin: 0 auto;
   background: #292f36;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
 
 @media screen and (max-width: 576px) {
 
-  
-
-  /* .FormTextarea,
-  .FormTextarea textarea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-  } */
-
-  .FormTextarea textarea::placeholder{
-    /* text-align: center; */
-  }
-
   .FormBtn .FormLink{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .FormTextarea textarea {
+    width: 640px;
   }
 }
