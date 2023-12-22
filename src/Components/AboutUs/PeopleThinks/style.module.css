@@ -39,12 +39,14 @@
 .PeopleContentImg .EmptyCard,
 .PeopleContentImg .PeopleImageBox {
   width: 20%;
-  height: 460px;
+}
+
+.PeopleContentImg .EmptyCard {
+  height: 32rem;
 }
 
 .PeopleContentImg img {
   border-radius: 30px;
-  /* object-fit: cover; */
   width: 100%;
   height: 100%;
 }
@@ -141,17 +143,14 @@
 
   .PeopleCardTitle {
     width: 35rem;
-    /* background-color: green; */
   }
 
   .PeopleCardTitle h3 {
-    /* background-color: yellow; */
     font-size: 2rem;
   }
 
   .PeopleContentImg {
     width: 100%;
-    /* object-fit: cover; */
   }
 
   .PeopleContent img:hover {
@@ -170,8 +169,6 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    /* object-fit: contain; */
-    /* background-color: red; */
   }
 
   .PeopleContentImg img {
