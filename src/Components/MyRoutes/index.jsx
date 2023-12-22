@@ -56,11 +56,7 @@ export const myRoutes = [
     path: "/WorkPlanCardsDetail/:id",
     element: <WorkPlanCardsDetail />,
   },
-  {
-    id: 9,
-    path: "*",
-    element: <ErrorPage />,
-  },
+
   {
     id: 10,
     path: "/project/:id",
@@ -73,7 +69,12 @@ export const myRoutes = [
   },
   {
     id: 12,
-    path: "/AboutUs/PricingAndPlan",
+    path: "/PricingAndPlan",
     element: <PricingAndPlanPage />,
+  },
+  {
+    id: 9,
+    path: "*",
+    element: <ErrorPage />,
   },
 ];

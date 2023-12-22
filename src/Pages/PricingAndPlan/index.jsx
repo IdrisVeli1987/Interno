@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import { motion } from "framer-motion";
+import Footer from "../../Components/Footer";
 
 const PricingAndPlanPage = () => {
   return (
