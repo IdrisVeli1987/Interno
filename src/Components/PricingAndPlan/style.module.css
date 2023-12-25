@@ -1,30 +1,79 @@
-.PricingCards {
-  background-color: red;
+.PriceListBox {
+  border-radius: 33px;
+  background: #f4f0ec;
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.PricingCard {
+.priceListBox {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 368px;
-  padding: 64px 0px;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 33px;
-  background: #f4f0ec;
-}
-
-.PriceListBox{
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
-  background-color: gold;
+  flex-wrap: wrap;
+  /* width: 368px; */
+  /* padding: 64px 0px; */
+  /* gap: 10px; */
 }
 
-.priceListBox{
+.PriceListBox h5 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.PriceData {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: orange;
+  margin: 0;
+}
+
+.priceListBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceListBox p {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.priceListBox h4 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 85px;
+  font-weight: 400;
+}
+
+.ListData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ListData p {
+  color: #4d5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 250%;
+}
+
+.PriceData hr {
+  width: 368px;
+  height: 1px;
+  background: #cda274;
 }
