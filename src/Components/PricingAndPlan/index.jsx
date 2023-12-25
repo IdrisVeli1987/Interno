@@ -10,28 +10,31 @@ const PricingAndPlan = () => {
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       setPrice(data);
-      console.log(data);
     });
   }, []);
   return (
     <div className="container">
-      <div className="row">
-        <div className={styles.PricingCards}>
-          <div className={styles.PricingCard}>
-            {price.map(({ id, title, currency, price, type, priceList }) => (
-              <div className={styles.PriceListBox} key={id}>
-                <h5>{title}</h5>
-                <div className={styles.priceListBox}>
+      <div className="row my-5">
+        {price.map(({ id, title, currency, price, type, priceList }) => (
+          <div className={`col-md-4`} key={id}>
+            <div className={styles.PriceListBox}>
+              <h5>{title}</h5>
+              <div className={styles.priceListBox}>
+                <div className={styles.PriceData}>
                   <p>{currency}</p>
                   <h4>{price}</h4>
-                  <p>{type}</p>
                 </div>
-                <hr />
-                <p>{priceList}</p>
+                <p>{type}</p>
               </div>
-            ))}
+              <div className={styles.ListData}>
+                <hr />
+                {priceList.map((text, index) => (
+                  <p key={index}> {text}</p>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
