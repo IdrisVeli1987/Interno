@@ -4,6 +4,7 @@ import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
 import { motion } from "framer-motion";
 import Footer from "../../Components/Footer";
+import PricingAndPlan from "../../Components/PricingAndPlan";
 
 const PricingAndPlanPage = () => {
   return (
@@ -15,9 +16,10 @@ const PricingAndPlanPage = () => {
         <Navigation />
         <PageBanner
           src="../PricingAndPlan/Banner.svg"
-          page="Pricing and plan"
+          page="Pricing"
           title="Pricing and plan"
         />
+        <PricingAndPlan />
         <Footer />
       </motion.div>
     </div>
