@@ -1,0 +1,30 @@
+.PricingCards {
+  background-color: red;
+}
+
+.PricingCard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 368px;
+  padding: 64px 0px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 33px;
+  background: #f4f0ec;
+}
+
+.PriceListBox{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: gold;
+}
+
+.priceListBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
