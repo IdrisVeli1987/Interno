@@ -37,6 +37,7 @@ const Result = () => {
                   <div>
                     <Link to="/PricingAndPlan">
                       <Button
+                        to="/PricingAndPlan"
                         title="Our Pricing and Plan"
                         arrow
                         bg="dark"
