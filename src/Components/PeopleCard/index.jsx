@@ -4,14 +4,14 @@ import { Rating } from "react-simple-star-rating";
 import { Link } from "react-router-dom";
 
 const PeopleCard = ({ name, src, city, description }) => {
-  const [rating, setRating] = useState(0); // initial rating value
+  const [rating, setRating] = useState(2); // initial rating value
 
   // Catch Rating value
   const handleRating = (rate) => {
     setRating(rate);
   };
   return (
-    <div className={`${styles.PeopleCard} col-12 col-md-1 col-sm-2`}>
+    <div className={`${styles.PeopleCard}`}>
       <div className={styles.PeopleCard_top}>
         <img className={styles.image} src={src} alt={name} />
         <div>
@@ -23,13 +23,14 @@ const PeopleCard = ({ name, src, city, description }) => {
       <div className={styles.rate}>
         <Rating
           onClick={handleRating}
-          ratingValue={rating}
+          initialValue={rating}
           size={20}
           label
           transition
           fillColor="orange"
           emptyColor="gray"
           className="foo"
+          readonly
         />
         {rating}
       </div>

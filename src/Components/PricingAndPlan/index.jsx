@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import Button from "../Button";
 
 const url = "http://localhost:3000/Price";
 
@@ -40,6 +42,15 @@ const PricingAndPlan = () => {
                   {priceList.map((text, index) => (
                     <p key={index}> {text}</p>
                   ))}
+                </div>
+                <div className={styles.PriceBtn}>
+                  <Button
+                    to={"/"}
+                    title="Get Started"
+                    arrow
+                    bg="gold"
+                    color="black"
+                  />
                 </div>
               </div>
             </div>

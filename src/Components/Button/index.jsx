@@ -1,19 +1,16 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import styles from "./style.css";
+import { Link } from "react-router-dom";
 
-const Button = ({ title, arrow, arrowClass, bg, color }) => {
+const Button = ({ title, arrow, arrowClass, bg, to }) => {
   return (
-    <button className={`button ${bg}`}>
+    <Link to={to} className={`button ${bg}`}>
       {title}
       {arrow && (
-        <AiOutlineArrowRight
-          color="#CDA274"
-          strokeWidth={"2px"}
-          className={arrowClass}
-        />
+        <AiOutlineArrowRight strokeWidth={"2px"} className={arrowClass} />
       )}
-    </button>
+    </Link>
   );
 };
 

@@ -1,26 +1,28 @@
+:root {
+  --mainColor: #cda274;
+}
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 24px 13px 24px;
+  padding: 20px 24px;
   border-radius: 18px;
   font-size: 18px;
   gap: 10px;
   cursor: pointer;
-  border: 1px solid;
+  border: 1px solid transparent;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   color: #fff;
-  border-color: transparent;
   transition: all 0.2s ease;
-  width: 100%;
-  
+  width: fit-content;
 
   &:hover {
     transform: scale(1.1);
   }
 }
 .button .arrow-gold {
-  color: #cda274;
+  color: var(--mainColor);
   font-size: 20px;
 }
 .dark {
@@ -35,11 +37,19 @@
 }
 
 .gold {
-  background: #cda274;
+  background: var(--mainColor);
+  margin: 28px 0 70px 0;
+
+  & > * {
+    color: black;
+  }
 
   &:hover {
     border-color: #292f36;
     background-color: #000;
     color: #fff;
+    & > * {
+      color: var(--mainColor);
+    }
   }
 }
