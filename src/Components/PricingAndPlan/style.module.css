@@ -2,7 +2,7 @@
   border-radius: 33px;
   background: #f4f0ec;
   padding-top: 64px;
-  margin: 150px 0;
+  margin: 20px 0;
 }
 
 .priceListBox {
@@ -114,7 +114,7 @@
   .line {
     background-color: #000;
   }
-} 
+}
 
 .PriceBtn {
   display: flex;
@@ -123,5 +123,10 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    background-color: red;
+  }
 }

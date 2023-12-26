@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  /* margin-top: 40px; */
+  margin-top: 200px;
 }
 
 .FooterLogo {
@@ -67,15 +67,14 @@
 
 .Contact h4 {
   display: flex;
-  align-items: flex-start ;
+  align-items: flex-start;
   padding-left: 30px;
 }
 
 .pages p,
-.Services p,
-.Contact p {
+.Services p {
   display: flex;
-  align-items: center; 
+  align-items: center;
   color: #4d5053;
   font-family: Jost;
   font-size: 22px;
@@ -86,16 +85,29 @@
 }
 
 .Contact .IconComponent {
-  font-size: 20px;
-  /* background-color: red; */
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
 }
 
-.IconComponentLocation{
+.Contact .IconComponentLocation {
   display: flex;
-  align-self: flex-start;
-  font-size: 50px;
+  align-self: center;
+  justify-content: center;
+  font-size: 22px;
+  gap: 15px;
+  color: #000; 
+  line-height: 30px;
 }
+
+.IconComponentLocation svg{
+  font-size: 44px;
+}
+
 
 .Copyright {
   width: 100%;

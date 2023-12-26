@@ -16,10 +16,10 @@ const PricingAndPlan = () => {
   }, []);
   return (
     <div className="container">
-      <div className="row my-5">
+      <div className="row my-5 ">
         {price.map(
           ({ id, popularPlan, title, currency, price, type, priceList }) => (
-            <div className={` col-12 col-md-4 `} key={id}>
+            <div className={` col-12 col-md-6 col-lg-4`} key={id}>
               <div
                 className={`${styles.PriceListBox} ${
                   popularPlan && styles.popularPlan

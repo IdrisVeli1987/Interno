@@ -79,18 +79,24 @@ const Footer = () => {
           </div>
           <div className={`${styles.Contact} `}>
             <h4>Contact</h4>
-            <p>
-              <CiLocationOn className={styles.IconComponentLocation} />
+            <Link
+              className={styles.IconComponentLocation}
+              to="https://maps.app.goo.gl/pqipLGgoY262ngd29"
+              target="_blank"
+            >
+              <CiLocationOn />
               Building 187C, 115 Heydar Aliyev Ave, Baku 1029
-            </p>
-            <p>
-              <MdMarkEmailRead className={styles.IconComponent} />
+            </Link>
+            <Link
+              to="mailto:idrisveliev@gmail.com"
+              className={styles.IconComponent}
+            >
+              <MdMarkEmailRead />
               <span className="ms-1"> idrisveliev@gmail.com</span>
-            </p>
-            <p>
-              <IoMdPhonePortrait className={styles.IconComponent} /> (+994)
-              77-233-93-31
-            </p>
+            </Link>
+            <Link to="tel:+994772339331" className={styles.IconComponent}>
+              <IoMdPhonePortrait /> (+994) 77-233-93-31
+            </Link>
           </div>
         </div>
       </div>
