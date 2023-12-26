@@ -1,0 +1,31 @@
+.TitleList,
+.TitleList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.TitleList ul {
+  width: 800px;
+  list-style-type: none;
+  border: 1px solid #cda274;
+  justify-content: space-between;
+}
+
+.TitleList ul li {
+  color: #292f36;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 26px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: All 0.5s;
+}
+
+.active {
+  background-color: red;
+}
