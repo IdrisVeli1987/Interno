@@ -19,14 +19,14 @@ const PricingAndPlan = () => {
       <div className="row my-5">
         {price.map(
           ({ id, popularPlan, title, currency, price, type, priceList }) => (
-            <div className={`col-md-4`} key={id}>
+            <div className={` col-12 col-md-4 `} key={id}>
               <div
                 className={`${styles.PriceListBox} ${
                   popularPlan && styles.popularPlan
-                }`}
+                } `}
               >
                 <h5>{title}</h5>
-                <div className={styles.priceListBox}>
+                <div className={`${styles.priceListBox}`}>
                   <div className={styles.PriceData}>
                     <p>{currency}</p>
                     <h4 className={styles.PriceTitle}>{price}</h4>
