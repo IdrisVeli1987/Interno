@@ -1,6 +1,6 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
-import axios from "axios";
 
 const url = "http://localhost:3000/Project";
 
@@ -11,7 +11,6 @@ const Projects = () => {
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       setBedroomFiles(data);
-      console.log(data);
     });
   }, []);
   const titles = ["Bathroom", "Bed Room", "Kitchan", "Living Area"];
@@ -32,10 +31,20 @@ const Projects = () => {
             })}
           </ul>
         </div>
-        {active === 0 && <p>menu 0</p>}
-        {active === 1 && <p>menu 1</p>}
-        {active === 2 && <p>menu 2</p>}
-        {active === 3 && <p>menu 3</p>} 
+        {bedroomFiles.map(({ id, src, title, subtitle }) => {
+          return (
+            <div key={id} className={styles.RoomsImages}>
+              <div className="row col-12">
+                <div className=" row col-6">
+                  <img src={src} alt="" />
+                  <h5>{title}</h5>
+                  <p>{subtitle}</p>
+                </div>
+              </div>
+              
+            </div>
+          );
+        })}
       </div>
     </div>
   );
