@@ -27,5 +27,37 @@
 }
 
 .active {
-  background-color: red;
+  background-color: #cda274;
+}
+
+.RoomsImages {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  gap: 20px;
+  margin-top: 60px;
+  width: 50%;
+}
+
+.RoomsImages h5 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: start;
+  margin-top: 30px;
+}
+
+.RoomsImages img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.RoomsImages p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: start;
 }
