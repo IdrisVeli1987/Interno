@@ -17,34 +17,42 @@ const Projects = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className={styles.TitleList}>
-          <ul>
-            {titles.map((title, index) => {
+        <div className="col-10 mx-auto">
+          <div className={styles.TitleList}>
+            <ul>
+              {titles.map((title, index) => {
+                return (
+                  <li
+                    onClick={() => setActive(index)}
+                    className={index === active ? styles.active : ""}
+                  >
+                    {title}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-10 mx-auto ">
+          <div className={styles.RoomsImagesContainer}>
+            {bedroomFiles.map(({ id, src, title, subtitle }, index) => {
               return (
-                <li
-                  onClick={() => setActive(index)}
-                  className={index === active ? styles.active : ""}
-                >
-                  {title}
-                </li>
+                <div key={id} className={styles.RoomsImages}>
+                  <div>
+                    <img src={src} alt="" />
+                  </div>
+                  <div>
+                    {" "}
+                    <h5>{title}</h5>
+                    <p>{subtitle}</p>
+                  </div>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </div>
-        {bedroomFiles.map(({ id, src, title, subtitle }) => {
-          return (
-            <div key={id} className={styles.RoomsImages}>
-              <div className="row col-12">
-                <div className=" row col-6">
-                  <img src={src} alt="" />
-                  <h5>{title}</h5>
-                  <p>{subtitle}</p>
-                </div>
-              </div>
-              
-            </div>
-          );
-        })}
       </div>
     </div>
   );
