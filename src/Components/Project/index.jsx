@@ -1,23 +1,24 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
+import PagePaginate from "./PagePaginate";
 
 const url = "http://localhost:3000/Project";
 
 const Projects = () => {
   const [bedroomFiles, setBedroomFiles] = useState([]);
   const [active, setActive] = useState(0);
-
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       setBedroomFiles(data);
     });
   }, []);
+
   const titles = ["Bathroom", "Bed Room", "Kitchan", "Living Area"];
   return (
     <div className="container">
       <div className="row">
-        <div className="col-10 mx-auto">
+        <div className="col-8 mx-auto ">
           <div className={styles.TitleList}>
             <ul>
               {titles.map((title, index) => {
@@ -32,26 +33,8 @@ const Projects = () => {
               })}
             </ul>
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-10 mx-auto ">
-          <div className={styles.RoomsImagesContainer}>
-            {bedroomFiles.map(({ id, src, title, subtitle }, index) => {
-              return (
-                <div key={id} className={styles.RoomsImages}>
-                  <div>
-                    <img src={src} alt="" />
-                  </div>
-                  <div>
-                    {" "}
-                    <h5>{title}</h5>
-                    <p>{subtitle}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+
+          <PagePaginate bedroomFiles={bedroomFiles} />
         </div>
       </div>
     </div>
