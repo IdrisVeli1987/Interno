@@ -52,7 +52,6 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 31.25px */
   letter-spacing: 0.5px;
 }
 
@@ -66,8 +65,6 @@
 }
 
 .card_arrow {
-  /* width: 70px; */
-  /* height: 70px; */
   border-radius: 50%;
   background-color: #f4f0ec;
   color: #292F36;
