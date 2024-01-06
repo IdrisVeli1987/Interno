@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import PagePaginate from "./PagePaginate";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const url = "http://localhost:3000/Project";
 
@@ -31,6 +32,7 @@ const Projects = () => {
                   </li>
                 );
               })}
+              <MdOutlineArrowForwardIos />
             </ul>
           </div>
 

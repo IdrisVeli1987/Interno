@@ -68,6 +68,10 @@
 
 .RoomsImages img:hover {
   border-radius: 10px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
 }
 
 .RoomsImagesContainer .RoomsImages:nth-child(1) {
