@@ -109,12 +109,12 @@ button {
     text-align: center;
   }
 
-  button{
-    width: 40% !important;
+  button {
+    /* width: 40% !important; */
     font-size: 20px !important;
   }
 
-  button:hover{
+  button:hover {
     color: #fff;
   }
 }
