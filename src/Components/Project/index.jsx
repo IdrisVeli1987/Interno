@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import styles from "./style.module.css";
 import PagePaginate from "./PagePaginate";
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+import styles from "./style.module.css";
 
 const url = "http://localhost:3000/Project";
 
@@ -20,7 +19,7 @@ const Projects = () => {
     <div className="container">
       <div className="row">
         <div className="col-8 mx-auto ">
-          <div className={styles.TitleList}>
+          <div className={`${styles.TitleList}`}>
             <ul>
               {titles.map((title, index) => {
                 return (
@@ -32,10 +31,8 @@ const Projects = () => {
                   </li>
                 );
               })}
-              <MdOutlineArrowForwardIos />
             </ul>
           </div>
-
           <PagePaginate bedroomFiles={bedroomFiles} />
         </div>
       </div>
