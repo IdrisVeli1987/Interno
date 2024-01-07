@@ -60,18 +60,17 @@
 }
 
 .card_bottom:hover {
-  box-shadow: inset 100%   0 0 0 #54b3d6;
+  box-shadow: inset 100% 0 0 0 #54b3d6;
   color: white;
 }
 
 .card_arrow {
   border-radius: 50%;
   background-color: #f4f0ec;
-  color: #292F36;
+  color: #292f36;
   font-size: 30px;
   border: 1px solid;
   border-color: transparent;
   transition: all 0.5s ease;
   cursor: pointer;
 }
-
