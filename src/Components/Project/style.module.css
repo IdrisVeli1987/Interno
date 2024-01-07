@@ -90,3 +90,47 @@
 .RoomsImagesContainer .RoomsImages:nth-child(5) {
   grid-row: 4 / span 2;
 }
+
+.card_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  color: #000 !important;
+  background-color: #f4f0ec;
+}
+
+.RoomListTitles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .RoomsImagesContainer {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(8, 450px) !important;
+  }
+
+  .RoomsImagesContainer > div {
+    grid-column: inherit !important;
+    grid-row: inherit !important;
+  }
+
+  .RoomsImagesContainer > div img {
+    height: 300px !important;
+  }
+
+  .TitleList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  } 
+
+  .TitleList > ul{
+    width: 100%;
+  }
+}
