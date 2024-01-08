@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-8 mx-auto ">
+        <div className="col-8 col-lg-8 col-md-10 col-sm-10 mx-auto ">
           <div className={`${styles.TitleList}`}>
             <ul>
               {titles.map((title, index) => {
