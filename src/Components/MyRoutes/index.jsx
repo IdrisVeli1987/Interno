@@ -5,11 +5,10 @@ import Project from "../../Pages/Project";
 import Blog from "../../Pages/Blog";
 import Contact from "../../Pages/Contact";
 import WorkPlanCardsDetail from "../../Pages/WorkPlanCardsDeatil";
-import ProjectDeatil from "../../Pages/ProjectDetail";
 import ServiceSingle from "../../Pages/ServiceSingle";
 import AboutUs from "../../Pages/AboutUs";
 import PricingAndPlanPage from "../../Pages/PricingAndPlan";
-
+import ProjectDetail from "../../Pages/ProjectDetail";
 export const myRoutes = [
   {
     id: 1,
@@ -60,7 +59,7 @@ export const myRoutes = [
   {
     id: 10,
     path: "/project/:id",
-    element: <ProjectDeatil />,
+    element: <ProjectDetail />,
   },
   {
     id: 11,
