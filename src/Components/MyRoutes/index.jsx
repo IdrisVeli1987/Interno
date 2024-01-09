@@ -9,6 +9,7 @@ import ServiceSingle from "../../Pages/ServiceSingle";
 import AboutUs from "../../Pages/AboutUs";
 import PricingAndPlanPage from "../../Pages/PricingAndPlan";
 import ProjectDetail from "../../Pages/ProjectDetail";
+
 export const myRoutes = [
   {
     id: 1,

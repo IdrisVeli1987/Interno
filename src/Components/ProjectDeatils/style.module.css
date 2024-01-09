@@ -1,0 +1,60 @@
+.ClientCard {
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #f4f0ec;
+  justify-content: space-between;
+}
+
+.ClientCard div p {
+  margin: 10px;
+}
+
+.ClientCardList p {
+  color: #4d5053;
+  font-family: DM Serif Display;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.ListInfo p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.CardTitle {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.description {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.DetailImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.DetailImg img {
+  width: 1201px;
+  height: 799px;
+  border-radius: 70px;
+  background: #c4c4c4;
+  object-fit: cover;
+}

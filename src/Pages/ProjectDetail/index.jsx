@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Navigation from "../../Components/Navigation";
 import PageBanner from "../../Components/PageBanner";
+import Footer from "../../Components/Footer";
+import ProjectDetails from "../../Components/ProjectDeatils";
 
 const URL = "http://localhost:3000/OurProjects/";
 
@@ -29,7 +31,9 @@ const ProjectDetail = () => {
       <Navigation />
       <PageBanner src="../ProjectPage/ProjectPage.svg" />
       <h2>{project.title}</h2>
-      <p>{project.description}</p>
+      {/* <p>{project.description}</p> */}
+      <ProjectDetails />
+      <Footer/>
     </motion.div>
   );
 };
