@@ -10,7 +10,7 @@ import PageBanner from "../../Components/PageBanner";
 
 const URL = "http://localhost:3000/OurProjects/";
 
-const ProjectDeatil = () => {
+const ProjectDetail = () => {
   const { id } = useParams();
   const [project, setProject] = useState([]);
 
@@ -23,19 +23,15 @@ const ProjectDeatil = () => {
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <Helmet>
-        <title></title>
+        <title>{project.title}</title>
       </Helmet>
 
       <Navigation />
-      <PageBanner
-        src="../ProjectPage/ProjectPage.svg"
-        page="project"
-        title="Our Project"
-      />
+      <PageBanner src="../ProjectPage/ProjectPage.svg" />
       <h2>{project.title}</h2>
       <p>{project.description}</p>
     </motion.div>
   );
 };
 
-export default ProjectDeatil;
+export default ProjectDetail;
