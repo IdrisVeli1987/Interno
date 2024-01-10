@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import PageBanner from "../../Components/PageBanner";
 import Footer from "../../Components/Footer";
 import Projects from "../../Components/Project";
+import Modal from "../../Components/ProjectDeatils/Modal";
 
 const Project = () => {
   return (
@@ -19,6 +20,7 @@ const Project = () => {
         title="Our Project"
       />
       <Projects />
+      <Modal />
       <Footer />
     </motion.div>
   );
