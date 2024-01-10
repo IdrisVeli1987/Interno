@@ -34,6 +34,13 @@
   font-weight: 400;
 }
 
+.CardTitle h2 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+}
+
 .description {
   color: #4d5053;
   font-family: Jost;
@@ -49,12 +56,23 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  position: relative;
 }
 
 .DetailImg img {
-  width: 1201px;
-  height: 799px;
   border-radius: 70px;
   background: #c4c4c4;
   object-fit: cover;
+  width: 100%;
+}
+.ZoomIcon {
+  position: absolute;
+  cursor: pointer;
+  max-width: 150px;
+  width: 20%;
+}
+
+.ZoomIcon svg {
+  width: 100%;
+  vertical-align: middle;
 }
