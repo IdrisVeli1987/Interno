@@ -46,7 +46,11 @@ const ProjectDetails = () => {
         </div>
 
         <div className={styles.DetailImg}>
-          <img src="../ProjectsDetail/Photo.png" alt="" />
+          <img
+            src="../ProjectsDetail/Photo.png"
+            alt=""
+            onClick={() => setModalActive(false)}
+          />
           <button
             className={styles.ZoomIcon}
             onClick={() => setModalActive(!modalActive)}
