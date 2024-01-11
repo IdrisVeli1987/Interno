@@ -3,10 +3,7 @@
   border-radius: 12px;
   background-color: gray;
   position: absolute;
-  /* left: 50%;
-  top: 50%; */
   width: 50%;
-  height: 50%;
 }
 
 .ModalContent h3 {
@@ -24,13 +21,14 @@
   align-items: center;
 }
 
-.ModalHeader button{
+.ModalHeader button {
   background: none;
   margin-top: 0;
   border: none;
   cursor: pointer;
-  color:black;
+  color: black;
   padding: 0 !important;
   width: 32px;
   height: 32px;
 }
+
