@@ -20,7 +20,7 @@ const ProjectDetails = () => {
               <p>Your client name</p>
               <p>Interiors</p>
               <p>interior, Home</p>
-              <p>Date 23,02, 2022</p>
+              <p>Date 23.02.2022</p>
               <p>Link example.com</p>
             </div>
           </div>
