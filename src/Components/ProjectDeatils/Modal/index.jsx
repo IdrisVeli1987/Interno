@@ -3,11 +3,9 @@ import styles from "./style.module.css";
 import { HiXMark } from "react-icons/hi2";
 
 const Modal = ({onCloseModal}) => {
-  const [show, setShow] = useState(false);
- 
  
   return (
-    <div className={styles.ModalContent}>
+    <div className={`${styles.ModalContent} col-12 sm-4`}>
       <div className={styles.ModalHeader}>
         <h3>Minimal Bedroom</h3>
         <button onClick={onCloseModal}>
