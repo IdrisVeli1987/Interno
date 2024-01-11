@@ -30,8 +30,6 @@ const ProjectDetail = () => {
 
       <Navigation />
       <PageBanner src="../ProjectPage/ProjectPage.svg" />
-      <h2>{project.title}</h2>
-      {/* <p>{project.description}</p> */}
       <ProjectDetails />
       <Footer/>
     </motion.div>

@@ -62,9 +62,9 @@ const DesignVideo = () => {
                       width="172"
                       height="172"
                       filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
+                      // colorInterpolationFilters="sRGB"
                     >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feFlood  result="BackgroundImageFix" />
                       <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
