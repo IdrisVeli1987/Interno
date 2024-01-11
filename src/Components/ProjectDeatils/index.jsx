@@ -47,7 +47,7 @@ const ProjectDetails = () => {
 
         <div className={styles.DetailImg}>
           <img src="../ProjectsDetail/Photo.png" alt="" />
-          <buttton
+          <button
             className={styles.ZoomIcon}
             onClick={() => setModalActive(!modalActive)}
           >
@@ -101,8 +101,10 @@ const ProjectDetails = () => {
                 </filter>
               </defs>
             </svg>
-          </buttton>
-          {modalActive && <Modal />}
+          </button>
+          {modalActive && (
+            <Modal onCloseModal={() => setModalActive(!modalActive)} />
+          )}
         </div>
       </div>
     </div>
