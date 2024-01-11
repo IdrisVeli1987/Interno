@@ -7,8 +7,8 @@ const ProjectDetails = () => {
   return (
     <div className="container">
       <div className="row align-items-center mt-5 ">
-        <div className="col-4 p-3">
-          <div className={styles.ClientCard}>
+        <div className="col-12 col-xl-4 p-3">
+          <div className={`${styles.ClientCard} col-12 col-xl-12 col-lg-10`}>
             <div className={styles.ClientCardList}>
               <p>Client</p>
               <p>Category</p>
@@ -26,7 +26,7 @@ const ProjectDetails = () => {
           </div>
         </div>
 
-        <div className={`col-8 ${styles.CardTitle}`}>
+        <div className={`col-12 col-xl-8 ${styles.CardTitle}`}>
           <h2>Minimal Look Bedrooms</h2>
           <p className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem
