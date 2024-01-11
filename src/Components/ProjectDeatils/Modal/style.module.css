@@ -6,5 +6,31 @@
   /* left: 50%;
   top: 50%; */
   width: 50%;
-  height: 20%;
+  height: 50%;
+}
+
+.ModalContent h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.ModalContent p {
+  text-align: left;
+}
+
+.ModalHeader {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.ModalHeader button{
+  background: none;
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+  color:black;
+  padding: 0 !important;
+  width: 32px;
+  height: 32px;
 }
