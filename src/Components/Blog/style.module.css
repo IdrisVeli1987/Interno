@@ -10,10 +10,66 @@
   justify-content: space-around;
 }
 
-.LatestPost h3 {
+.PostContent h3 {
   color: #292f36;
   font-family: DM Serif Display;
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 27px;
+}
+
+.PostContent img {
+  /* width: 765px;
+  height: 510px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PostCost {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.PostCost h5 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  width: 463px;
+  text-align: left;
+}
+
+.PostCost p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  /* margin-bottom: 45px; */
+}
+
+.PostDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PostCost p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.PostBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  width: 50px;
+  height: 50px;
 }
