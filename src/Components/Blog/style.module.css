@@ -1,0 +1,19 @@
+.blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LatestPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LatestPost h3 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
