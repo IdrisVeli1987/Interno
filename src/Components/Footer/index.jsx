@@ -80,6 +80,7 @@ const Footer = () => {
           <div className={`${styles.Contact} `}>
             <h4>Contact</h4>
             <Link
+              style={{ marginBottom: 15 }}
               className={styles.IconComponentLocation}
               to="https://maps.app.goo.gl/pqipLGgoY262ngd29"
               target="_blank"
@@ -88,13 +89,18 @@ const Footer = () => {
               Building 187C, 115 Heydar Aliyev Ave, Baku 1029
             </Link>
             <Link
+              style={{ marginBottom: 15 }}
               to="mailto:idrisveliev@gmail.com"
               className={styles.IconComponent}
             >
               <MdMarkEmailRead />
               <span className="ms-1"> idrisveliev@gmail.com</span>
             </Link>
-            <Link to="tel:+994772339331" className={styles.IconComponent}>
+            <Link
+              style={{ marginBottom: 15 }}
+              to="tel:+994772339331"
+              className={styles.IconComponent}
+            >
               <IoMdPhonePortrait /> (+994) 77-233-93-31
             </Link>
           </div>
