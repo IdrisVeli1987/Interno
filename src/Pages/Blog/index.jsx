@@ -3,6 +3,8 @@ import Navigation from "../../Components/Navigation";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import PageBanner from "../../Components/PageBanner";
+import SingleBlog from "../../Components/Blog";
+import Footer from "../../Components/Footer";
 
 const Blog = () => {
   return (
@@ -20,6 +22,9 @@ const Blog = () => {
         />
         {/* <h2>{project.title}</h2>
         <p>{project.description}</p> */}
+
+        <SingleBlog />
+        <Footer/>
       </motion.div>
     </div>
   );
