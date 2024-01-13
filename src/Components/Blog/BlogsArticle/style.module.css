@@ -1,0 +1,61 @@
+.BlogsArticleContent {
+  margin-top: 150px;
+  gap: 30px !important;
+}
+
+.BlogsArticleContent h3 {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.ImagesCard {
+  width: calc((100% / 3) - 28px);
+  overflow: hidden;
+  padding: 21px;
+  border-radius: 62px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.ImagesCard img {
+  border-top-left-radius: 62px;
+  border-top-right-radius: 62px;
+  width: 100%;
+  height: auto;
+}
+
+.ImagesCard p {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  /* margin-bottom: 20px; */
+}
+
+.ImagesCardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.ImagesCardBottom p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.ImageCardBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f0ec;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

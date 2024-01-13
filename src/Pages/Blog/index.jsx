@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import PageBanner from "../../Components/PageBanner";
 import SingleBlog from "../../Components/Blog";
 import Footer from "../../Components/Footer";
+import BlogsArticle from "../../Components/Blog/BlogsArticle";
 
 const Blog = () => {
   return (
@@ -24,6 +25,7 @@ const Blog = () => {
         <p>{project.description}</p> */}
 
         <SingleBlog />
+        <BlogsArticle />
         <Footer/>
       </motion.div>
     </div>

@@ -9,6 +9,7 @@ import ServiceSingle from "../../Pages/ServiceSingle";
 import AboutUs from "../../Pages/AboutUs";
 import PricingAndPlanPage from "../../Pages/PricingAndPlan";
 import ProjectDetail from "../../Pages/ProjectDetail";
+import BlogsArticle from "../Blog/BlogsArticle";
 
 export const myRoutes = [
   {
@@ -71,6 +72,11 @@ export const myRoutes = [
     id: 12,
     path: "/PricingAndPlan",
     element: <PricingAndPlanPage />,
+  },
+  {
+    id: 13,
+    path: "/BlogsArticle",
+    element: <BlogsArticle />,
   },
   {
     id: 9,

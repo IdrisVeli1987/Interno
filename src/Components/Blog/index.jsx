@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import BlogsArticle from "./BlogsArticle";
 
 const url = "http://localhost:3000/Blog";
 
@@ -12,7 +13,6 @@ const SingleBlog = () => {
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       setBlog(data);
-      console.log(data);
     });
   }, []);
   return (
@@ -46,6 +46,7 @@ const SingleBlog = () => {
             })}
           </div>
         </div>
+        {/* <BlogsArticle /> */}
       </div>
     </div>
   );
